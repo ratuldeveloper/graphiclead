@@ -1,0 +1,775 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "SwaggerBake - A MixerAPI Project",
+        "description": "For documentation please review the project [README](https:\/\/github.com\/cnizzardini\/cakephp-swagger-bake) and for\nother great API related packages checkout [MixerAPI](http:\/\/mixerapi.com). To change this text edit your\n`swagger.yaml` file.\n",
+        "license": {
+            "name": "YOUR-LICENSE-HERE"
+        }
+    },
+    "servers": [
+        {
+            "url": "\/"
+        }
+    ],
+    "paths": {
+        "\/api\/imageqr": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "tags": [
+                    "Images Qr"
+                ],
+                "operationId": "api:imagesqr:postimageqr:post",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "description": ""
+                                }
+                            },
+                            "application\/xml": {
+                                "schema": {
+                                    "xml": {
+                                        "name": "response"
+                                    },
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        },
+        "\/api\/imageqr\/{id}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "tags": [
+                    "Images Qr"
+                ],
+                "operationId": "api:imagesqr:getimageqrbyid:get",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "description": ""
+                                }
+                            },
+                            "application\/xml": {
+                                "schema": {
+                                    "xml": {
+                                        "name": "response"
+                                    },
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            },
+            "put": {
+                "summary": "",
+                "description": "",
+                "tags": [
+                    "Images Qr"
+                ],
+                "operationId": "api:imagesqr:updateimageqrbyid:put",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "description": ""
+                                }
+                            },
+                            "application\/xml": {
+                                "schema": {
+                                    "xml": {
+                                        "name": "response"
+                                    },
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        },
+        "\/api\/imagequeue": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "tags": [
+                    "Images Qr"
+                ],
+                "operationId": "api:imagesqr:getallimagequeue:get",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "description": ""
+                                }
+                            },
+                            "application\/xml": {
+                                "schema": {
+                                    "xml": {
+                                        "name": "response"
+                                    },
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        },
+        "\/api\/users": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "tags": [
+                    "Users"
+                ],
+                "operationId": "api:users:index:get",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "items": {
+                                                "type": "object",
+                                                "allOf": [
+                                                    {
+                                                        "$ref": "#\/x-swagger-bake\/components\/schemas\/User-Read"
+                                                    }
+                                                ]
+                                            },
+                                            "type": "array"
+                                        }
+                                    },
+                                    "allOf": [
+                                        {
+                                            "$ref": "#\/x-swagger-bake\/components\/schemas\/Generic-Collection"
+                                        }
+                                    ]
+                                }
+                            },
+                            "application\/xml": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "items": {
+                                                "type": "object",
+                                                "allOf": [
+                                                    {
+                                                        "$ref": "#\/x-swagger-bake\/components\/schemas\/User-Read"
+                                                    }
+                                                ]
+                                            },
+                                            "type": "array"
+                                        }
+                                    },
+                                    "allOf": [
+                                        {
+                                            "$ref": "#\/x-swagger-bake\/components\/schemas\/Generic-Collection"
+                                        }
+                                    ],
+                                    "xml": {
+                                        "name": "response"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        },
+        "\/api\/users\/login": {
+            "post": {
+                "summary": "User login",
+                "description": "Your Swagger forms are built automatically straight from your Cake Models and Routes, without the need for\nadditional annotations! All batteries were included in this example.",
+                "tags": [
+                    "Users"
+                ],
+                "operationId": "api:users:login:post",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "description": ""
+                                }
+                            },
+                            "application\/xml": {
+                                "schema": {
+                                    "xml": {
+                                        "name": "response"
+                                    },
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        },
+        "\/api\/users\/register": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "tags": [
+                    "Users"
+                ],
+                "operationId": "api:users:register:post",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "description": ""
+                                }
+                            },
+                            "application\/xml": {
+                                "schema": {
+                                    "xml": {
+                                        "name": "response"
+                                    },
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        }
+    },
+    "definitions": null,
+    "components": {
+        "schemas": {
+            "Exception": {
+                "properties": {
+                    "code": {
+                        "example": 500,
+                        "type": "integer"
+                    },
+                    "url": {
+                        "example": "\/url\/path",
+                        "type": "string"
+                    },
+                    "message": {
+                        "example": "Internal Error",
+                        "type": "string"
+                    }
+                },
+                "xml": {
+                    "name": "response"
+                },
+                "description": "",
+                "type": "object"
+            },
+            "OperationResult": {
+                "properties": {
+                    "result": {
+                        "type": "boolean"
+                    }
+                },
+                "xml": {
+                    "name": "response"
+                },
+                "description": "",
+                "type": "object"
+            },
+            "User": {
+                "properties": {
+                    "id": {
+                        "readOnly": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "user_name": {
+                        "minLength": 1,
+                        "type": "string"
+                    },
+                    "password": {
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "type": "string"
+                    },
+                    "email": {
+                        "minLength": 1,
+                        "type": "string"
+                    },
+                    "first_name": {
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "type": "string"
+                    },
+                    "company": {
+                        "minLength": 1,
+                        "type": "string"
+                    },
+                    "active": {
+                        "minLength": 1,
+                        "type": "boolean"
+                    },
+                    "token": {
+                        "minLength": 1,
+                        "type": "string"
+                    },
+                    "last_login": {
+                        "minLength": 1,
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "code_count": {
+                        "minLength": 1,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "created": {
+                        "readOnly": true,
+                        "minLength": 1,
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "modified": {
+                        "readOnly": true,
+                        "minLength": 1,
+                        "type": "string",
+                        "format": "date-time"
+                    }
+                },
+                "description": "User Entity",
+                "type": "object"
+            }
+        }
+    },
+    "x-swagger-bake": {
+        "components": {
+            "parameters": {
+                "paginatorPage": {
+                    "name": "page",
+                    "in": "query",
+                    "required": false,
+                    "schema": {
+                        "type": "integer"
+                    }
+                },
+                "paginatorLimit": {
+                    "name": "limit",
+                    "in": "query",
+                    "required": false,
+                    "schema": {
+                        "type": "integer"
+                    }
+                },
+                "paginatorSort": {
+                    "name": "direction",
+                    "in": "query",
+                    "required": false,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                "paginatorDirection": {
+                    "name": "direction",
+                    "in": "query",
+                    "required": false,
+                    "schema": {
+                        "type": "string",
+                        "enum": [
+                            "asc",
+                            "desc"
+                        ]
+                    }
+                }
+            },
+            "schemas": {
+                "HalJson-Item": {
+                    "type": "object",
+                    "properties": {
+                        "links": {
+                            "type": "object",
+                            "properties": {
+                                "self": {
+                                    "type": "object",
+                                    "properties": {
+                                        "href": {
+                                            "type": "string",
+                                            "format": "url",
+                                            "example": "\/entity\/:id"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "HalJson-Collection": {
+                    "type": "object",
+                    "properties": {
+                        "links": {
+                            "type": "object",
+                            "properties": {
+                                "self": {
+                                    "type": "object",
+                                    "properties": {
+                                        "href": {
+                                            "type": "string",
+                                            "format": "url",
+                                            "example": "\/collection"
+                                        }
+                                    }
+                                },
+                                "next": {
+                                    "type": "object",
+                                    "properties": {
+                                        "href": {
+                                            "type": "string",
+                                            "format": "url",
+                                            "example": "\/collection?page=:number"
+                                        }
+                                    }
+                                },
+                                "prev": {
+                                    "type": "object",
+                                    "properties": {
+                                        "href": {
+                                            "type": "string",
+                                            "format": "url",
+                                            "example": "\/collection?page=:number"
+                                        }
+                                    }
+                                },
+                                "first": {
+                                    "type": "object",
+                                    "properties": {
+                                        "href": {
+                                            "type": "string",
+                                            "format": "url",
+                                            "example": "\/collection?page=:number"
+                                        }
+                                    }
+                                },
+                                "properties": {
+                                    "href": {
+                                        "type": "string",
+                                        "format": "url",
+                                        "example": "\/collection?page=:number"
+                                    }
+                                }
+                            },
+                            "last": {
+                                "type": "object",
+                                "properties": {
+                                    "href": {
+                                        "type": "string",
+                                        "format": "url",
+                                        "example": "\/collection?page=:number"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "JsonLd-Item": {
+                    "type": "object",
+                    "properties": {
+                        "@id": {
+                            "type": "string",
+                            "format": "url",
+                            "example": "\/entity\/:id"
+                        },
+                        "@type": {
+                            "type": "string",
+                            "format": "url",
+                            "example": "https:\/\/schema.org\/Thing"
+                        },
+                        "@context": {
+                            "type": "string",
+                            "format": "url",
+                            "example": "\/context\/Entity"
+                        }
+                    }
+                },
+                "JsonLd-Collection": {
+                    "type": "object",
+                    "properties": {
+                        "@id": {
+                            "type": "string",
+                            "format": "url",
+                            "example": "\/entity\/:id"
+                        },
+                        "@type": {
+                            "type": "string",
+                            "format": "url",
+                            "example": "https:\/\/schema.org\/Thing"
+                        },
+                        "@context": {
+                            "type": "string",
+                            "format": "url",
+                            "example": "\/context\/Entity"
+                        },
+                        "view": {
+                            "type": "object",
+                            "properties": {
+                                "@id": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "example": "\/index"
+                                },
+                                "@type": {
+                                    "type": "string",
+                                    "example": "PartialCollectionView"
+                                },
+                                "next": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "example": "\/index?page=:number"
+                                },
+                                "prev": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "example": "\/index?page=:number"
+                                },
+                                "first": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "example": "\/index"
+                                },
+                                "last": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "example": "\/index?page=:number"
+                                }
+                            }
+                        }
+                    }
+                },
+                "Generic-Collection": {
+                    "type": "object",
+                    "x-data-element": "data",
+                    "properties": {
+                        "collection": {
+                            "type": "object",
+                            "properties": {
+                                "url": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "example": "\/index"
+                                },
+                                "count": {
+                                    "type": "integer",
+                                    "example": 20
+                                },
+                                "total": {
+                                    "type": "integer",
+                                    "example": 200
+                                },
+                                "pages": {
+                                    "type": "integer",
+                                    "example": 10
+                                },
+                                "next": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "example": "\/index?page=:number"
+                                },
+                                "prev": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "example": "\/index?page=:number"
+                                },
+                                "first": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "example": "\/index"
+                                },
+                                "last": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "example": "\/index?page=:number"
+                                }
+                            }
+                        }
+                    }
+                },
+                "User-Read": {
+                    "properties": {
+                        "id": {
+                            "readOnly": true,
+                            "type": "integer",
+                            "format": "int64"
+                        },
+                        "user_name": {
+                            "minLength": 1,
+                            "type": "string"
+                        },
+                        "password": {
+                            "minLength": 1,
+                            "maxLength": 64,
+                            "type": "string"
+                        },
+                        "email": {
+                            "minLength": 1,
+                            "type": "string"
+                        },
+                        "first_name": {
+                            "minLength": 1,
+                            "maxLength": 64,
+                            "type": "string"
+                        },
+                        "last_name": {
+                            "minLength": 1,
+                            "maxLength": 64,
+                            "type": "string"
+                        },
+                        "company": {
+                            "minLength": 1,
+                            "type": "string"
+                        },
+                        "active": {
+                            "minLength": 1,
+                            "type": "boolean"
+                        },
+                        "token": {
+                            "minLength": 1,
+                            "type": "string"
+                        },
+                        "last_login": {
+                            "minLength": 1,
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "code_count": {
+                            "minLength": 1,
+                            "type": "integer",
+                            "format": "int64"
+                        },
+                        "created": {
+                            "readOnly": true,
+                            "minLength": 1,
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "modified": {
+                            "readOnly": true,
+                            "minLength": 1,
+                            "type": "string",
+                            "format": "date-time"
+                        }
+                    },
+                    "description": "User Entity",
+                    "type": "object"
+                },
+                "User-Write": {
+                    "properties": {
+                        "user_name": {
+                            "minLength": 1,
+                            "type": "string"
+                        },
+                        "password": {
+                            "minLength": 1,
+                            "maxLength": 64,
+                            "type": "string"
+                        },
+                        "email": {
+                            "minLength": 1,
+                            "type": "string"
+                        },
+                        "first_name": {
+                            "minLength": 1,
+                            "maxLength": 64,
+                            "type": "string"
+                        },
+                        "last_name": {
+                            "minLength": 1,
+                            "maxLength": 64,
+                            "type": "string"
+                        },
+                        "company": {
+                            "minLength": 1,
+                            "type": "string"
+                        },
+                        "active": {
+                            "minLength": 1,
+                            "type": "boolean"
+                        },
+                        "token": {
+                            "minLength": 1,
+                            "type": "string"
+                        },
+                        "last_login": {
+                            "minLength": 1,
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "code_count": {
+                            "minLength": 1,
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    },
+                    "description": "User Entity",
+                    "type": "object"
+                },
+                "User-Add": {
+                    "required": [
+                        "password",
+                        "first_name",
+                        "last_name"
+                    ],
+                    "allOf": [
+                        {
+                            "$ref": "#\/x-swagger-bake\/components\/schemas\/User-Write"
+                        }
+                    ],
+                    "description": "User Entity",
+                    "type": "object"
+                },
+                "User-Edit": {
+                    "allOf": [
+                        {
+                            "$ref": "#\/x-swagger-bake\/components\/schemas\/User-Write"
+                        }
+                    ],
+                    "description": "User Entity",
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

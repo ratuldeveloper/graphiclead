@@ -1,0 +1,93 @@
+2022-03-30 11:42:17 error: [TypeError] Return value of Cake\Routing\RouteBuilder::parseDefaults() must be of the type array, object returned in C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php on line 704
+Stack Trace:
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php:675
+- C:\xampp\htdocs\graphic-lead\config\routes.php:68
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php:950
+- C:\xampp\htdocs\graphic-lead\config\routes.php:69
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:200
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:397
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:147
+- C:\xampp\htdocs\graphic-lead\bin\cake.php:12
+
+
+
+2022-03-30 11:44:23 error: [SwaggerBake\Lib\Exception\SwaggerBakeRunTimeException] No restful routes were found for your prefix `/api`. Try adding restful routes to your `config/routes.php`. in C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Factory\SwaggerFactory.php on line 55
+Stack Trace:
+- C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Command\BakeCommand.php:59
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\graphic-lead\bin\cake.php:12
+
+
+
+2022-03-30 11:44:39 error: [SwaggerBake\Lib\Exception\SwaggerBakeRunTimeException] No restful routes were found for your prefix `/api`. Try adding restful routes to your `config/routes.php`. in C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Factory\SwaggerFactory.php on line 55
+Stack Trace:
+- C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Command\BakeCommand.php:59
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\graphic-lead\bin\cake.php:12
+
+
+
+2022-03-30 11:46:19 error: [SwaggerBake\Lib\Exception\SwaggerBakeRunTimeException] No restful routes were found for your prefix `/api`. Try adding restful routes to your `config/routes.php`. in C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Factory\SwaggerFactory.php on line 55
+Stack Trace:
+- C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Command\BakeCommand.php:59
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\graphic-lead\bin\cake.php:12
+
+
+
+2022-03-30 11:48:29 error: [SwaggerBake\Lib\Exception\SwaggerBakeRunTimeException] No restful routes were found for your prefix `/api`. Try adding restful routes to your `config/routes.php`. in C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Factory\SwaggerFactory.php on line 55
+Stack Trace:
+- C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Command\BakeCommand.php:59
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\graphic-lead\bin\cake.php:12
+
+
+
+2022-03-30 11:48:57 error: [SwaggerBake\Lib\Exception\SwaggerBakeRunTimeException] No restful routes were found for your prefix `/api`. Try adding restful routes to your `config/routes.php`. in C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Factory\SwaggerFactory.php on line 55
+Stack Trace:
+- C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Command\BakeCommand.php:59
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\graphic-lead\bin\cake.php:12
+
+
+
+2022-03-30 12:18:46 error: [SwaggerBake\Lib\Exception\SwaggerBakeRunTimeException] No restful routes were found for your prefix `api`. Try adding restful routes to your `config/routes.php`. in C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Factory\SwaggerFactory.php on line 55
+Stack Trace:
+- C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Command\BakeCommand.php:59
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\graphic-lead\bin\cake.php:12
+
+
+
+2022-03-30 12:19:38 error: [SwaggerBake\Lib\Exception\SwaggerBakeRunTimeException] No restful routes were found for your prefix `api`. Try adding restful routes to your `config/routes.php`. in C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Factory\SwaggerFactory.php on line 55
+Stack Trace:
+- C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Command\BakeCommand.php:59
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\graphic-lead\bin\cake.php:12
+
+
+
+2022-03-30 12:20:00 error: [SwaggerBake\Lib\Exception\SwaggerBakeRunTimeException] No restful routes were found for your prefix `api`. Try adding restful routes to your `config/routes.php`. in C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Factory\SwaggerFactory.php on line 55
+Stack Trace:
+- C:\xampp\htdocs\graphic-lead\vendor\cnizzardini\cakephp-swagger-bake\src\Command\BakeCommand.php:59
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\graphic-lead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\graphic-lead\bin\cake.php:12
+
+
+

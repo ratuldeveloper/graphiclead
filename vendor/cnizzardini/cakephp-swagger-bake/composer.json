@@ -1,0 +1,69 @@
+{
+    "name": "cnizzardini/cakephp-swagger-bake",
+    "description": "Automatically generate Swagger documentation from your exist routes with minimal comments and configuration",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "keywords": ["cakephp swagger","cakephp4 swagger","cake swagger"],
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*",
+        "cakephp/cakephp": "^4.0",
+        "symfony/yaml": "^5.0",
+        "phpdocumentor/reflection-docblock": "^5.1",
+        "doctrine/annotations": "^1.10",
+        "thecodingmachine/class-explorer": "^1.1",
+        "mixerapi/core": "^0.2"
+    },
+    "suggest": {
+        "friendsofcake/search": "Easy model searching with @SwagSearch",
+        "cakephp/authentication": "Automates OpenApi security schemes"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "friendsofcake/search": "^6.0",
+        "cakephp/authentication": "^2.0",
+        "cakephp/cakephp-codesniffer": "^4.2",
+        "phpstan/phpstan": "^0.12.32",
+        "phpmd/phpmd": "^2.10",
+        "cakephp/bake": "^2.1",
+        "php-coveralls/php-coveralls": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "SwaggerBake\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SwaggerBake\\Test\\": "tests/",
+            "SwaggerBakeTest\\App\\": "tests/test_app/src/",
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
+        }
+    },
+    "scripts": {
+        "analyze": [
+            "@test",
+            "@phpcs",
+            "@phpstan",
+            "@phpmd"
+        ],
+        "phpcs": "phpcs --colors -p --standard=vendor/cakephp/cakephp-codesniffer/CakePHP src/",
+        "phpcbf": "phpcbf --colors --standard=vendor/cakephp/cakephp-codesniffer/CakePHP src/",
+        "phpstan": "phpstan analyse src/",
+        "test": "phpunit --colors=always",
+        "phpmd": "phpmd src/ ansi phpmd.xml",
+        "coverage": "phpunit --coverage-html coverage-reports/"
+    },
+    "support": {
+        "issues": "https://github.com/cnizzardini/cakephp-swagger-bake/issues",
+        "wiki": "https://github.com/cnizzardini/cakephp-swagger-bake/wiki",
+        "source": "https://github.com/cnizzardini/cakephp-swagger-bake"
+    },
+    "authors": [
+        {
+            "name": "Chris Nizzardini",
+            "homepage": "http://github.com/cnizzardini",
+            "role": "Developer"
+        }
+    ]
+}
