@@ -18,9 +18,6 @@ class ApiController extends Controller {
     public function beforeFilter(EventInterface $event)
     {
         parent::beforeFilter($event);
-        $status = true;
-        $error = '';
-        $this->viewBuilder()->setVars(compact('status', 'error'));
     }
      /**
      * @inerhitDoc

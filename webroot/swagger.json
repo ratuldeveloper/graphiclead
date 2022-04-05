@@ -155,49 +155,15 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "properties": {
-                                        "data": {
-                                            "items": {
-                                                "type": "object",
-                                                "allOf": [
-                                                    {
-                                                        "$ref": "#\/x-swagger-bake\/components\/schemas\/User-Read"
-                                                    }
-                                                ]
-                                            },
-                                            "type": "array"
-                                        }
-                                    },
-                                    "allOf": [
-                                        {
-                                            "$ref": "#\/x-swagger-bake\/components\/schemas\/Generic-Collection"
-                                        }
-                                    ]
+                                    "description": ""
                                 }
                             },
                             "application\/xml": {
                                 "schema": {
-                                    "properties": {
-                                        "data": {
-                                            "items": {
-                                                "type": "object",
-                                                "allOf": [
-                                                    {
-                                                        "$ref": "#\/x-swagger-bake\/components\/schemas\/User-Read"
-                                                    }
-                                                ]
-                                            },
-                                            "type": "array"
-                                        }
-                                    },
-                                    "allOf": [
-                                        {
-                                            "$ref": "#\/x-swagger-bake\/components\/schemas\/Generic-Collection"
-                                        }
-                                    ],
                                     "xml": {
                                         "name": "response"
-                                    }
+                                    },
+                                    "description": ""
                                 }
                             }
                         }
@@ -305,74 +271,6 @@
                     "name": "response"
                 },
                 "description": "",
-                "type": "object"
-            },
-            "User": {
-                "properties": {
-                    "id": {
-                        "readOnly": true,
-                        "type": "integer",
-                        "format": "int64"
-                    },
-                    "user_name": {
-                        "minLength": 1,
-                        "type": "string"
-                    },
-                    "password": {
-                        "minLength": 1,
-                        "maxLength": 64,
-                        "type": "string"
-                    },
-                    "email": {
-                        "minLength": 1,
-                        "type": "string"
-                    },
-                    "first_name": {
-                        "minLength": 1,
-                        "maxLength": 64,
-                        "type": "string"
-                    },
-                    "last_name": {
-                        "minLength": 1,
-                        "maxLength": 64,
-                        "type": "string"
-                    },
-                    "company": {
-                        "minLength": 1,
-                        "type": "string"
-                    },
-                    "active": {
-                        "minLength": 1,
-                        "type": "boolean"
-                    },
-                    "token": {
-                        "minLength": 1,
-                        "type": "string"
-                    },
-                    "last_login": {
-                        "minLength": 1,
-                        "type": "string",
-                        "format": "date-time"
-                    },
-                    "code_count": {
-                        "minLength": 1,
-                        "type": "integer",
-                        "format": "int64"
-                    },
-                    "created": {
-                        "readOnly": true,
-                        "minLength": 1,
-                        "type": "string",
-                        "format": "date-time"
-                    },
-                    "modified": {
-                        "readOnly": true,
-                        "minLength": 1,
-                        "type": "string",
-                        "format": "date-time"
-                    }
-                },
-                "description": "User Entity",
                 "type": "object"
             }
         }
@@ -626,148 +524,6 @@
                             }
                         }
                     }
-                },
-                "User-Read": {
-                    "properties": {
-                        "id": {
-                            "readOnly": true,
-                            "type": "integer",
-                            "format": "int64"
-                        },
-                        "user_name": {
-                            "minLength": 1,
-                            "type": "string"
-                        },
-                        "password": {
-                            "minLength": 1,
-                            "maxLength": 64,
-                            "type": "string"
-                        },
-                        "email": {
-                            "minLength": 1,
-                            "type": "string"
-                        },
-                        "first_name": {
-                            "minLength": 1,
-                            "maxLength": 64,
-                            "type": "string"
-                        },
-                        "last_name": {
-                            "minLength": 1,
-                            "maxLength": 64,
-                            "type": "string"
-                        },
-                        "company": {
-                            "minLength": 1,
-                            "type": "string"
-                        },
-                        "active": {
-                            "minLength": 1,
-                            "type": "boolean"
-                        },
-                        "token": {
-                            "minLength": 1,
-                            "type": "string"
-                        },
-                        "last_login": {
-                            "minLength": 1,
-                            "type": "string",
-                            "format": "date-time"
-                        },
-                        "code_count": {
-                            "minLength": 1,
-                            "type": "integer",
-                            "format": "int64"
-                        },
-                        "created": {
-                            "readOnly": true,
-                            "minLength": 1,
-                            "type": "string",
-                            "format": "date-time"
-                        },
-                        "modified": {
-                            "readOnly": true,
-                            "minLength": 1,
-                            "type": "string",
-                            "format": "date-time"
-                        }
-                    },
-                    "description": "User Entity",
-                    "type": "object"
-                },
-                "User-Write": {
-                    "properties": {
-                        "user_name": {
-                            "minLength": 1,
-                            "type": "string"
-                        },
-                        "password": {
-                            "minLength": 1,
-                            "maxLength": 64,
-                            "type": "string"
-                        },
-                        "email": {
-                            "minLength": 1,
-                            "type": "string"
-                        },
-                        "first_name": {
-                            "minLength": 1,
-                            "maxLength": 64,
-                            "type": "string"
-                        },
-                        "last_name": {
-                            "minLength": 1,
-                            "maxLength": 64,
-                            "type": "string"
-                        },
-                        "company": {
-                            "minLength": 1,
-                            "type": "string"
-                        },
-                        "active": {
-                            "minLength": 1,
-                            "type": "boolean"
-                        },
-                        "token": {
-                            "minLength": 1,
-                            "type": "string"
-                        },
-                        "last_login": {
-                            "minLength": 1,
-                            "type": "string",
-                            "format": "date-time"
-                        },
-                        "code_count": {
-                            "minLength": 1,
-                            "type": "integer",
-                            "format": "int64"
-                        }
-                    },
-                    "description": "User Entity",
-                    "type": "object"
-                },
-                "User-Add": {
-                    "required": [
-                        "password",
-                        "first_name",
-                        "last_name"
-                    ],
-                    "allOf": [
-                        {
-                            "$ref": "#\/x-swagger-bake\/components\/schemas\/User-Write"
-                        }
-                    ],
-                    "description": "User Entity",
-                    "type": "object"
-                },
-                "User-Edit": {
-                    "allOf": [
-                        {
-                            "$ref": "#\/x-swagger-bake\/components\/schemas\/User-Write"
-                        }
-                    ],
-                    "description": "User Entity",
-                    "type": "object"
                 }
             }
         }

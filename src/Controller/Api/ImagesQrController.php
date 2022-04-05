@@ -3,7 +3,11 @@ declare(strict_types=1);
 namespace App\Controller\Api;
 use App\Controller\Api\ApiController;
 use App\Utility\Utility;
+use Cake\Core\Configure;
 use App\Error\Exception\ValidationErrorException;
+use App\Error\Exception\ApiException;
+use Cake\Routing\Router;
+use Exception;
 
 /**
  * ImagesQueue Controller
@@ -34,24 +38,61 @@ class ImagesQrController extends ApiController {
 
     }
     public function postImageQr() {
+        try {
+            $imageQrEntityData = [];
+            $requestData = $this->request->getData();
+            $validationResult = $this->_valdateImageQrRequestData($requestData);
+            if($validationResult['error']) {
+                $this->set($validationResult);
+                //$this->setResponse($this->getResponse())
+                $this->response = $this->getResponse()->withStatus($validationResult['status']);
+            } else {
+                $uuid = Utility::generateRanmdomUniqueId();
+                $this->_setAttributeData($requestData,$uuid);
+                // check if request method is url
+                if($requestData['image']['method'] === 'url') {
+                    $imageData = Utility::createImageFromUrl($requestData['image']['url'],$uuid);
+                    if(!$imageData) {
+                        throw new ApiException("Something went wrong dumring image upload",422);
+                    }
+                    $imageQrEntityData['content_type'] = $imageData['content_type'];
+                    $imageQrEntityData['image_url'] = $imageData['file_name'];
+                    $imageQrEntityData['submitted'] = date('Y-m-d H:i:s');
+                    $imageQrEntityData['status'] = Configure::read('Status')['STATUS_SUBMITTED'];
+
+                }
+                $imageQrEntityData['uuid'] = $uuid;
+                $imageQrEntityData['user_id'] = $this->Authentication->getResult()->getData()->id;
+                if(!$this->_saveImageQrEntity($imageQrEntityData)) {
+                    throw new ApiException('something went wrong during saving information',422);
+                }
+                $this->set([
+                    'uuid' => $uuid,
+                    'url' => Router::fullBaseUrl().'/api/imageqr/'.$uuid,
+                ]);
+
+            }
+        } catch(ApiException $e) {
+            $errorData['error'] = [
+                'message' => $e->getMessage(),
+            ];
+            $errorData['status'] = $e->getCode();
+            $this->set($errorData);
+            $this->response = $this->getResponse()->withStatus($e->getCode());
+        } 
         
-        $requestData = $this->request->getData();
-        $validationResult = $this->_valdateImageQrRequestData($requestData);
-        if($validationResult['error']) {
-            $this->set($validationResult);
-            //$this->setResponse($this->getResponse())
-            $this->response = $this->getResponse()->withStatus($validationResult['status']);
-        } else {
-            $uuid = Utility::generateRanmdomUniqueId();
-            $this->_setAttributeData($requestData,$uuid);
-
-
-
-        }
     }
     public function updateImageQrById() {
 
     }
+
+    private function _saveImageQrEntity($requestData) {
+        $imageQrEntity = $this->ImagesQr->newEntity($requestData);
+        return $this->ImagesQr->save($imageQrEntity);
+
+    }
+
+
 
     private function _setAttributeData($requestData,$uuid) {
         $fileName = $uuid.'.json';

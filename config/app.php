@@ -203,6 +203,10 @@ return [
     'Debugger' => [
         'editor' => 'phpstorm',
     ],
+    'Status' => [
+        'STATUS_SUBMITTED' => 'SUBMITTED',
+        'STATUS_PENDING' => 'PENDING'
+    ],
 
     /*
      * Email configuration.

@@ -11,7 +11,7 @@ class ImagesQrTable extends Table {
     public function initialize(array $config): void
     {
         parent::initialize($config);
-        $this->setTable('images_queue');
+        $this->setTable('imagesqr');
         $this->setPrimaryKey('id');
         $this->hasMany('UsersTable',[
             'foreignKey' => 'user_id',

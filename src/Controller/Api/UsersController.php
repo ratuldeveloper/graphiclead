@@ -54,20 +54,30 @@ class UsersController extends ApiController {
         if ($result->isValid()) {
             $privateKey = file_get_contents(CONFIG . '/ssl/jwt.key');
             $user = $result->getData();
+            $iat = time();
+            $expiry = time()+60;
             $token = JWT::encode([
                 'id' => $user['id'],
                 'sub' => $user['id'],
-                'iat' => time(),
-                'exp' =>  time() + 86400,
+                'iat' => $iat,
+                'exp' =>  $expiry,
             ],$privateKey,'RS256');
-            $json = [
+            $response = [
+                'user_name' => $user->user_name,
                 'token' => 'Bearer '.$token,
+                'expires' => $expiry,
+                'email' => $user->email
             ];
         } else {
-            $this->response = $this->response->withStatus(401);
-            $json = [];
+            $this->response = $this->response->withStatus(422);
+            $response = [
+                'details' => [
+                    'message' => 'something went wrong,during token creation' 
+                ],
+                'status' => 422
+            ];
         }
-        $this->set(compact('json'));
+        $this->set($response);
     }
 
     public function register() {
