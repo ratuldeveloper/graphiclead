@@ -138,9 +138,8 @@ class Application extends BaseApplication implements AuthenticationServiceProvid
         ];
         $service->loadIdentifier('Authentication.JwtSubject');
         $service->loadAuthenticator('Authentication.Jwt', [
-            'secretKey' => new Key(file_get_contents(CONFIG . '/ssl/jwt.pem'), 'RS256'),
-            //'secretKey' => new Key(Security::getSalt(), 'HS256'),
-            'algorithm' => 'HS256',
+            'secretKey' => file_get_contents(CONFIG . '/ssl/jwt.pem'),
+            'algorithm' => 'RS256',
             'returnPayload' => false,
             'tokenPrefix' => 'Bearer',
             'header' => 'Authorization'

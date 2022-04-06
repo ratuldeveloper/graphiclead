@@ -17,6 +17,7 @@ declare(strict_types=1);
 namespace Authentication\Identifier;
 
 use ArrayAccess;
+use Authentication\Authenticator\Result;
 use InvalidArgumentException;
 use RuntimeException;
 
@@ -35,7 +36,7 @@ class CallbackIdentifier extends AbstractIdentifier
     ];
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     public function __construct(array $config)
     {
@@ -63,13 +64,18 @@ class CallbackIdentifier extends AbstractIdentifier
     }
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     public function identify(array $data)
     {
         $callback = $this->getConfig('callback');
 
         $result = $callback($data);
+        if ($result instanceof Result) {
+            $this->_errors = $result->getErrors();
+
+            return $result->getData();
+        }
         if ($result === null || $result instanceof ArrayAccess) {
             return $result;
         }

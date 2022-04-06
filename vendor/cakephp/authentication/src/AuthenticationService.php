@@ -74,22 +74,23 @@ class AuthenticationService implements AuthenticationServiceInterface
      *   user data.
      * - `identityClass` - The class name of identity or a callable identity builder.
      * - `identityAttribute` - The request attribute used to store the identity. Default to `identity`.
-     *
-     *   ```
-     *   $service = new AuthenticationService([
-     *      'authenticators' => [
-     *          'Authentication.Form
-     *      ],
-     *      'identifiers' => [
-     *          'Authentication.Password'
-     *      ]
-     *   ]);
-     *   ```
-     * - `identityAttribute` - The request attribute to store the identity in.
      * - `unauthenticatedRedirect` - The URL to redirect unauthenticated errors to. See
      *    AuthenticationComponent::allowUnauthenticated()
-     * - `queryParam` - Set to a string to have unauthenticated redirects contain a `redirect` query string
-     *   parameter with the previously blocked URL.
+     * - `queryParam` - The name of the query string parameter containing the previously blocked URL
+     *   in case of unauthenticated redirect, or null to disable appending the denied URL.
+     *
+     * ### Example:
+     *
+     * ```
+     * $service = new AuthenticationService([
+     *    'authenticators' => [
+     *        'Authentication.Form
+     *    ],
+     *    'identifiers' => [
+     *        'Authentication.Password'
+     *    ]
+     * ]);
+     * ```
      *
      * @var array
      */
@@ -138,7 +139,7 @@ class AuthenticationService implements AuthenticationServiceInterface
             $authenticators = $this->getConfig('authenticators');
             $this->_authenticators = new AuthenticatorCollection($identifiers, $authenticators);
         }
-    
+
         return $this->_authenticators;
     }
 
@@ -169,6 +170,9 @@ class AuthenticationService implements AuthenticationServiceInterface
     /**
      * {@inheritDoc}
      *
+     * @param \Psr\Http\Message\ServerRequestInterface $request The request.
+     * @return \Authentication\Authenticator\ResultInterface The result object. If none of the adapters was a success
+     *  the last failed result is returned.
      * @throws \RuntimeException Throws a runtime exception when no authenticators are loaded.
      */
     public function authenticate(ServerRequestInterface $request): ResultInterface
@@ -243,9 +247,7 @@ class AuthenticationService implements AuthenticationServiceInterface
             }
         }
 
-        if (!($identity instanceof IdentityInterface)) {
-            $identity = $this->buildIdentity($identity);
-        }
+        $identity = $this->buildIdentity($identity);
 
         return [
             'request' => $request->withAttribute($this->getConfig('identityAttribute'), $identity),
@@ -290,16 +292,16 @@ class AuthenticationService implements AuthenticationServiceInterface
      */
     public function getIdentity(): ?IdentityInterface
     {
-        if ($this->_result === null || !$this->_result->isValid()) {
+        if ($this->_result === null) {
             return null;
         }
 
-        $identity = $this->_result->getData();
-        if (!($identity instanceof IdentityInterface)) {
-            $identity = $this->buildIdentity($identity);
+        $identityData = $this->_result->getData();
+        if (!$this->_result->isValid() || $identityData === null) {
+            return null;
         }
 
-        return $identity;
+        return $this->buildIdentity($identityData);
     }
 
     /**
@@ -320,6 +322,10 @@ class AuthenticationService implements AuthenticationServiceInterface
      */
     public function buildIdentity($identityData): IdentityInterface
     {
+        if ($identityData instanceof IdentityInterface) {
+            return $identityData;
+        }
+
         $class = $this->getConfig('identityClass');
 
         if (is_callable($class)) {
@@ -363,15 +369,13 @@ class AuthenticationService implements AuthenticationServiceInterface
         }
 
         $uri = $request->getUri();
-        if (property_exists($uri, 'base')) {
-            $uri = $uri->withPath($uri->base . $uri->getPath());
-        }
         $redirect = $uri->getPath();
         if ($uri->getQuery()) {
             $redirect .= '?' . $uri->getQuery();
         }
         $query = urlencode($param) . '=' . urlencode($redirect);
 
+        /** @var array $url */
         $url = parse_url($target);
         if (isset($url['query']) && strlen($url['query'])) {
             $url['query'] .= '&' . $query;
@@ -379,6 +383,7 @@ class AuthenticationService implements AuthenticationServiceInterface
             $url['query'] = $query;
         }
         $fragment = isset($url['fragment']) ? '#' . $url['fragment'] : '';
+        $url['path'] = $url['path'] ?? '/';
 
         return $url['path'] . '?' . $url['query'] . $fragment;
     }
@@ -412,9 +417,11 @@ class AuthenticationService implements AuthenticationServiceInterface
             return null;
         }
         $parsed += ['path' => '/', 'query' => ''];
+        /** @psalm-suppress PossiblyUndefinedArrayOffset */
         if (strlen($parsed['path']) && $parsed['path'][0] !== '/') {
             $parsed['path'] = "/{$parsed['path']}";
         }
+        /** @psalm-suppress PossiblyUndefinedArrayOffset */
         if ($parsed['query']) {
             $parsed['query'] = "?{$parsed['query']}";
         }

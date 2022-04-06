@@ -9354,3 +9354,88 @@ Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
 Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
 [main] - ROOT\webroot\index.php, line 40
 
+2022-04-06 16:37:00 error: [TypeError] Key material must be a string, resource, or OpenSSLAsymmetricKey in C:\xampp\htdocs\graphiclead\vendor\firebase\php-jwt\src\Key.php on line 31
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Authenticator\JwtAuthenticator.php:190
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Authenticator\JwtAuthenticator.php:147
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Authenticator\JwtAuthenticator.php:91
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\AuthenticationService.php:183
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:105
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:172
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr
+
+
+2022-04-06 16:39:42 error: [Authentication\Authenticator\UnauthenticatedException] Authentication is required to continue in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 177
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:123
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:640
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:172
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr
+
+
+2022-04-06 16:40:27 error: [Authentication\Authenticator\UnauthenticatedException] Authentication is required to continue in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 177
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:123
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:640
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:172
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr
+
+

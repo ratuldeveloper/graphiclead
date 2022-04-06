@@ -22,6 +22,8 @@ use Authentication\PasswordHasher\PasswordHasherTrait;
 use Authentication\UrlChecker\UrlCheckerTrait;
 use Cake\Http\Cookie\Cookie;
 use Cake\Http\Cookie\CookieInterface;
+use Cake\Utility\Security;
+use InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use RuntimeException;
@@ -37,7 +39,7 @@ class CookieAuthenticator extends AbstractAuthenticator implements PersistenceIn
     use UrlCheckerTrait;
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     protected $_defaultConfig = [
         'loginUrl' => null,
@@ -49,17 +51,13 @@ class CookieAuthenticator extends AbstractAuthenticator implements PersistenceIn
         ],
         'cookie' => [
             'name' => 'CookieAuth',
-            'expire' => null,
-            'path' => '/',
-            'domain' => '',
-            'secure' => false,
-            'httpOnly' => false,
         ],
         'passwordHasher' => 'Authentication.Default',
+        'salt' => true,
     ];
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     public function __construct(IdentifierCollection $identifiers, array $config = [])
     {
@@ -81,7 +79,7 @@ class CookieAuthenticator extends AbstractAuthenticator implements PersistenceIn
     }
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     public function authenticate(ServerRequestInterface $request): ResultInterface
     {
@@ -123,7 +121,7 @@ class CookieAuthenticator extends AbstractAuthenticator implements PersistenceIn
     }
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     public function persistIdentity(ServerRequestInterface $request, ResponseInterface $response, $identity): array
     {
@@ -149,7 +147,7 @@ class CookieAuthenticator extends AbstractAuthenticator implements PersistenceIn
     /**
      * Creates a plain part of a cookie token.
      *
-     * Returns concatenated username and password hash.
+     * Returns concatenated username, password hash, and HMAC signature.
      *
      * @param array|\ArrayAccess $identity Identity data.
      * @return string
@@ -159,7 +157,23 @@ class CookieAuthenticator extends AbstractAuthenticator implements PersistenceIn
         $usernameField = $this->getConfig('fields.username');
         $passwordField = $this->getConfig('fields.password');
 
-        return $identity[$usernameField] . $identity[$passwordField];
+        $salt = $this->getConfig('salt', '');
+
+        $value = $identity[$usernameField] . $identity[$passwordField];
+
+        if ($salt === false) {
+            return $value;
+        }
+        if ($salt === true) {
+            $salt = Security::getSalt();
+        } elseif (!is_string($salt) || $salt === '') {
+            throw new InvalidArgumentException('Salt must be a non-empty string.');
+        }
+
+        $hmac = hash_hmac('sha1', $value, $salt);
+        // Instead of appending the plain salt, we create a hash. This limits the chance of the salt being leaked.
+
+        return $value . $hmac;
     }
 
     /**
@@ -195,7 +209,7 @@ class CookieAuthenticator extends AbstractAuthenticator implements PersistenceIn
     }
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     public function clearIdentity(ServerRequestInterface $request, ResponseInterface $response): array
     {
@@ -215,16 +229,25 @@ class CookieAuthenticator extends AbstractAuthenticator implements PersistenceIn
      */
     protected function _createCookie($value): CookieInterface
     {
-        $data = $this->getConfig('cookie');
+        $options = $this->getConfig('cookie');
+        $name = $options['name'];
+        unset($options['name']);
 
-        $cookie = new Cookie(
-            $data['name'],
+        if (array_key_exists('expire', $options)) {
+            deprecationWarning('Config key `expire` is deprecated, use `expires` instead.');
+            $options['expires'] = $options['expire'];
+            unset($options['expire']);
+        }
+        if (array_key_exists('httpOnly', $options)) {
+            deprecationWarning('Config key `httpOnly` is deprecated, use `httponly` instead.');
+            $options['httponly'] = $options['httpOnly'];
+            unset($options['httpOnly']);
+        }
+
+        $cookie = Cookie::create(
+            $name,
             $value,
-            $data['expire'],
-            $data['path'],
-            $data['domain'],
-            $data['secure'],
-            $data['httpOnly']
+            $options
         );
 
         return $cookie;

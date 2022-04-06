@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 /*
  * This file is part of Composer.
@@ -26,7 +26,7 @@ class PackageSorter
      * @param  array<string, int> $weights Pre-set weights for some packages to give them more (negative number) or less (positive) weight offsets
      * @return PackageInterface[] sorted array
      */
-    public static function sortPackages(array $packages, array $weights = array())
+    public static function sortPackages(array $packages, array $weights = array()): array
     {
         $usageList = array();
 
@@ -54,7 +54,7 @@ class PackageSorter
             }
 
             $computing[$name] = true;
-            $weight = isset($weights[$name]) ? $weights[$name] : 0;
+            $weight = $weights[$name] ?? 0;
 
             if (isset($usageList[$name])) {
                 foreach ($usageList[$name] as $user) {
@@ -76,7 +76,7 @@ class PackageSorter
             $weightedPackages[] = array('name' => $name, 'weight' => $weight, 'index' => $index);
         }
 
-        usort($weightedPackages, function ($a, $b) {
+        usort($weightedPackages, function (array $a, array $b): int {
             if ($a['weight'] !== $b['weight']) {
                 return $a['weight'] - $b['weight'];
             }

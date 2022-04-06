@@ -33,7 +33,6 @@ use RuntimeException;
 
 /**
  * Controller Component for interacting with Authentication.
- *
  */
 class AuthenticationComponent extends Component implements EventDispatcherInterface
 {
@@ -46,6 +45,7 @@ class AuthenticationComponent extends Component implements EventDispatcherInterf
      * - `requireIdentity` - By default AuthenticationComponent will require an
      *   identity to be present whenever it is active. You can set the option to
      *   false to disable that behavior. See allowUnauthenticated() as well.
+     * - `unauthenticatedMessage` - Error message to use when `UnauthenticatedException` is thrown.
      *
      * @var array
      */
@@ -54,6 +54,7 @@ class AuthenticationComponent extends Component implements EventDispatcherInterf
         'requireIdentity' => true,
         'identityAttribute' => 'identity',
         'identityCheckEvent' => 'Controller.startup',
+        'unauthenticatedMessage' => null,
     ];
 
     /**
@@ -173,7 +174,7 @@ class AuthenticationComponent extends Component implements EventDispatcherInterf
 
         $identity = $request->getAttribute($this->getConfig('identityAttribute'));
         if (!$identity) {
-            throw new UnauthenticatedException('No identity found. You can skip this check by configuring  `requireIdentity` to be `false`.');
+            throw new UnauthenticatedException($this->getConfig('unauthenticatedMessage', ''));
         }
     }
 
@@ -274,8 +275,10 @@ class AuthenticationComponent extends Component implements EventDispatcherInterf
         $controller = $this->getController();
         $service = $this->getAuthenticationService();
 
+        $service->clearIdentity($controller->getRequest(), $controller->getResponse());
+
         /** @psalm-var array{request: \Cake\Http\ServerRequest, response: \Cake\Http\Response} $result */
-        $result = $this->getAuthenticationService()->persistIdentity(
+        $result = $service->persistIdentity(
             $controller->getRequest(),
             $controller->getResponse(),
             $identity
@@ -336,7 +339,7 @@ class AuthenticationComponent extends Component implements EventDispatcherInterf
     /**
      * Get the Controller callbacks this Component is interested in.
      *
-     * @return array
+     * @return array<string, mixed>
      */
     public function implementedEvents(): array
     {

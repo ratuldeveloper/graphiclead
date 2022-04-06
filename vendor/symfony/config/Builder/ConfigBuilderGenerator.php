@@ -31,8 +31,11 @@ use Symfony\Component\Config\Loader\ParamConfigurator;
  */
 class ConfigBuilderGenerator implements ConfigBuilderGeneratorInterface
 {
-    private $classes;
-    private $outputDir;
+    /**
+     * @var ClassBuilder[]
+     */
+    private array $classes = [];
+    private string $outputDir;
 
     public function __construct(string $outputDir)
     {
@@ -89,6 +92,9 @@ public function NAME(): string
         foreach ($this->classes as $class) {
             $this->buildConstructor($class);
             $this->buildToArray($class);
+            if ($class->getProperties()) {
+                $class->addProperty('_usedProperties', null, '[]');
+            }
             $this->buildSetExtraKey($class);
 
             file_put_contents($this->getFullPath($class), $class->build());
@@ -135,6 +141,7 @@ public function NAME(): string
 public function NAME(array $value = []): CLASS
 {
     if (null === $this->PROPERTY) {
+        $this->_usedProperties[\'PROPERTY\'] = true;
         $this->PROPERTY = new CLASS($value);
     } elseif ([] !== $value) {
         throw new InvalidConfigurationException(\'The node created by "NAME()" has already been initialized. You cannot pass values the second time you call NAME().\');
@@ -156,10 +163,12 @@ public function NAME(array $value = []): CLASS
 
         $body = '
 /**
-COMMENT * @return $this
+COMMENT *
+ * @return $this
  */
-public function NAME($valueDEFAULT): self
+public function NAME(mixed $valueDEFAULT): static
 {
+    $this->_usedProperties[\'PROPERTY\'] = true;
     $this->PROPERTY = $value;
 
     return $this;
@@ -181,11 +190,13 @@ public function NAME($valueDEFAULT): self
                 // This is an array of values; don't use singular name
                 $body = '
 /**
- * @param ParamConfigurator|list<TYPE|ParamConfigurator> $value
+ * @param ParamConfigurator|list<ParamConfigurator|TYPE> $value
+ *
  * @return $this
  */
-public function NAME($value): self
+public function NAME(ParamConfigurator|array $value): static
 {
+    $this->_usedProperties[\'PROPERTY\'] = true;
     $this->PROPERTY = $value;
 
     return $this;
@@ -195,17 +206,17 @@ public function NAME($value): self
             } else {
                 $body = '
 /**
- * @param ParamConfigurator|TYPE $value
  * @return $this
  */
-public function NAME(string $VAR, $VALUE): self
+public function NAME(string $VAR, TYPE $VALUE): static
 {
+    $this->_usedProperties[\'PROPERTY\'] = true;
     $this->PROPERTY[$VAR] = $VALUE;
 
     return $this;
 }';
 
-                $class->addMethod($methodName, $body, ['PROPERTY' => $property->getName(), 'TYPE' => '' === $parameterType ? 'mixed' : $parameterType, 'VAR' => '' === $key ? 'key' : $key, 'VALUE' => 'value' === $key ? 'data' : 'value']);
+                $class->addMethod($methodName, $body, ['PROPERTY' => $property->getName(), 'TYPE' => '' === $parameterType ? 'mixed' : 'ParamConfigurator|'.$parameterType, 'VAR' => '' === $key ? 'key' : $key, 'VALUE' => 'value' === $key ? 'data' : 'value']);
             }
 
             return;
@@ -223,6 +234,8 @@ public function NAME(string $VAR, $VALUE): self
             $body = '
 public function NAME(array $value = []): CLASS
 {
+    $this->_usedProperties[\'PROPERTY\'] = true;
+
     return $this->PROPERTY[] = new CLASS($value);
 }';
             $class->addMethod($methodName, $body, ['PROPERTY' => $property->getName(), 'CLASS' => $childClass->getFqcn()]);
@@ -231,9 +244,11 @@ public function NAME(array $value = []): CLASS
 public function NAME(string $VAR, array $VALUE = []): CLASS
 {
     if (!isset($this->PROPERTY[$VAR])) {
-        return $this->PROPERTY[$VAR] = new CLASS($value);
+        $this->_usedProperties[\'PROPERTY\'] = true;
+
+        return $this->PROPERTY[$VAR] = new CLASS($VALUE);
     }
-    if ([] === $value) {
+    if ([] === $VALUE) {
         return $this->PROPERTY[$VAR];
     }
 
@@ -256,8 +271,9 @@ public function NAME(string $VAR, array $VALUE = []): CLASS
 /**
 COMMENT * @return $this
  */
-public function NAME($value): self
+public function NAME($value): static
 {
+    $this->_usedProperties[\'PROPERTY\'] = true;
     $this->PROPERTY = $value;
 
     return $this;
@@ -367,7 +383,7 @@ public function NAME($value): self
             }
 
             $body .= strtr('
-    if (null !== $this->PROPERTY) {
+    if (isset($this->_usedProperties[\'PROPERTY\'])) {
         $output[\'ORG_NAME\'] = '.$code.';
     }', ['PROPERTY' => $p->getName(), 'ORG_NAME' => $p->getOriginalName()]);
         }
@@ -397,7 +413,8 @@ public function NAME(): array
             }
 
             $body .= strtr('
-    if (isset($value[\'ORG_NAME\'])) {
+    if (array_key_exists(\'ORG_NAME\', $value)) {
+        $this->_usedProperties[\'PROPERTY\'] = true;
         $this->PROPERTY = '.$code.';
         unset($value[\'ORG_NAME\']);
     }
@@ -437,15 +454,12 @@ public function __construct(array $value = [])
         $class->addMethod('set', '
 /**
  * @param ParamConfigurator|mixed $value
+ *
  * @return $this
  */
-public function NAME(string $key, $value): self
+public function NAME(string $key, mixed $value): static
 {
-    if (null === $value) {
-        unset($this->_extraKeys[$key]);
-    } else {
-        $this->_extraKeys[$key] = $value;
-    }
+    $this->_extraKeys[$key] = $value;
 
     return $this;
 }');

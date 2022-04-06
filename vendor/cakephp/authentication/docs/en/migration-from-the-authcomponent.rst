@@ -16,9 +16,10 @@ Differences
    data from the session you’ll have to use the
    ``SessionAuthenticator``. It will check the session if there is data
    in the configured session key and put it into the identity object.
--  The user data is no longer available through the AuthComponent but is
+-  The user data is no longer available through the old AuthComponent but is
    accessible via a request attribute and encapsulated in an identity
-   object: ``$request->getAttribute('authentication')->getIdentity();``
+   object: ``$request->getAttribute('authentication')->getIdentity();``.
+   Additionally, you can leverage the ``AuthenticationComponent`` ``getIdentity()`` or ``getIdentityData()`` methods.
 -  The logic of the authentication process has been split into
    authenticators and identifiers. An authenticator will extract the
    credentials from the request, while identifiers verify the
@@ -73,6 +74,7 @@ service from your application::
 
     // Add the following use statements.
     use Authentication\AuthenticationService;
+    use Authentication\AuthenticationServiceInterface;
     use Authentication\AuthenticationServiceProviderInterface;
     use Authentication\Middleware\AuthenticationMiddleware;
     use Psr\Http\Message\ResponseInterface;
@@ -88,7 +90,7 @@ service from your application::
          * @param \Psr\Http\Message\ResponseInterface $response Response
          * @return \Authentication\AuthenticationServiceInterface
          */
-        public function getAuthenticationService(ServerRequestInterface $request, ResponseInterface $response)
+        public function getAuthenticationService(ServerRequestInterface $request) : AuthenticationServiceInterface
         {
             $service = new AuthenticationService();
             // Configure the service. (see below for more details)

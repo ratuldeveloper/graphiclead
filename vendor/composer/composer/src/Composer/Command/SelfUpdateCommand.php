@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 /*
  * This file is part of Composer.
@@ -36,13 +36,13 @@ use Symfony\Component\Finder\Finder;
  */
 class SelfUpdateCommand extends BaseCommand
 {
-    const HOMEPAGE = 'getcomposer.org';
-    const OLD_INSTALL_EXT = '-old.phar';
+    private const HOMEPAGE = 'getcomposer.org';
+    private const OLD_INSTALL_EXT = '-old.phar';
 
     /**
      * @return void
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setName('self-update')
@@ -59,6 +59,7 @@ class SelfUpdateCommand extends BaseCommand
                 new InputOption('snapshot', null, InputOption::VALUE_NONE, 'Force an update to the snapshot channel'),
                 new InputOption('1', null, InputOption::VALUE_NONE, 'Force an update to the stable channel, but only use 1.x versions'),
                 new InputOption('2', null, InputOption::VALUE_NONE, 'Force an update to the stable channel, but only use 2.x versions'),
+                new InputOption('2.2', null, InputOption::VALUE_NONE, 'Force an update to the stable channel, but only use 2.2.x LTS versions'),
                 new InputOption('set-channel-only', null, InputOption::VALUE_NONE, 'Only store the channel as the default one and then exit'),
             ))
             ->setHelp(
@@ -75,10 +76,9 @@ EOT
     }
 
     /**
-     * @return int
      * @throws FilesystemException
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         // trigger autoloading of a few classes which may be needed when verifying/swapping the phar file
         // to ensure we do not try to load them from the new phar, see https://github.com/composer/composer/issues/10252
@@ -182,8 +182,12 @@ EOT
             }
         }
 
-        if ($requestedChannel && is_numeric($requestedChannel) && strpos($latestStable['version'], $requestedChannel) !== 0) {
-            $io->writeError('<warning>Warning: You forced the install of '.$latestVersion.' via --'.$requestedChannel.', but '.$latestStable['version'].' is the latest stable version. Updating to it via composer self-update --stable is recommended.</warning>');
+        $effectiveChannel = $requestedChannel === null ? $versionsUtil->getChannel() : $requestedChannel;
+        if (is_numeric($effectiveChannel) && strpos($latestStable['version'], $effectiveChannel) !== 0) {
+            $io->writeError('<warning>Warning: You forced the install of '.$latestVersion.' via --'.$effectiveChannel.', but '.$latestStable['version'].' is the latest stable version. Updating to it via composer self-update --stable is recommended.</warning>');
+        }
+        if (isset($latest['eol'])) {
+            $io->writeError('<warning>Warning: Version '.$latestVersion.' is EOL / End of Life. '.$latestStable['version'].' is the latest stable version. Updating to it via composer self-update --stable is recommended.</warning>');
         }
 
         if (Preg::isMatch('{^[0-9a-f]{40}$}', $updateVersion) && $updateVersion !== $latestVersion) {
@@ -214,7 +218,7 @@ EOT
             return 0;
         }
 
-        $tempFilename = $tmpDir . '/' . basename($localFilename, '.phar').'-temp'.rand(0, 10000000).'.phar';
+        $tempFilename = $tmpDir . '/' . basename($localFilename, '.phar').'-temp'.random_int(0, 10000000).'.phar';
         $backupFile = sprintf(
             '%s/%s-%s%s',
             $rollbackDir,
@@ -298,6 +302,9 @@ TAGSPUBKEY
             }
 
             $pubkeyid = openssl_pkey_get_public($sigFile);
+            if (false === $pubkeyid) {
+                throw new \RuntimeException('Failed loading the public key from '.$sigFile);
+            }
             $algo = defined('OPENSSL_ALGO_SHA384') ? OPENSSL_ALGO_SHA384 : 'SHA384';
             if (!in_array('sha384', array_map('strtolower', openssl_get_md_methods()))) {
                 throw new \RuntimeException('SHA384 is not supported by your openssl extension, could not verify the phar file integrity');
@@ -308,6 +315,7 @@ TAGSPUBKEY
 
             // PHP 8 automatically frees the key instance and deprecates the function
             if (PHP_VERSION_ID < 80000) {
+                // @phpstan-ignore-next-line
                 openssl_free_key($pubkeyid);
             }
 
@@ -343,7 +351,7 @@ TAGSPUBKEY
      * @return void
      * @throws \Exception
      */
-    protected function fetchKeys(IOInterface $io, Config $config)
+    protected function fetchKeys(IOInterface $io, Config $config): void
     {
         if (!$io->isInteractive()) {
             throw new \RuntimeException('Public keys can not be fetched in non-interactive mode, please run Composer interactively');
@@ -351,7 +359,7 @@ TAGSPUBKEY
 
         $io->write('Open <info>https://composer.github.io/pubkeys.html</info> to find the latest keys');
 
-        $validator = function ($value) {
+        $validator = function ($value): string {
             if (!Preg::isMatch('{^-----BEGIN PUBLIC KEY-----$}', trim($value))) {
                 throw new \UnexpectedValueException('Invalid input');
             }
@@ -394,7 +402,7 @@ TAGSPUBKEY
      * @return int
      * @throws FilesystemException
      */
-    protected function rollback(OutputInterface $output, $rollbackDir, $localFilename)
+    protected function rollback(OutputInterface $output, string $rollbackDir, string $localFilename): int
     {
         $rollbackVersion = $this->getLastBackupVersion($rollbackDir);
         if (!$rollbackVersion) {
@@ -428,7 +436,7 @@ TAGSPUBKEY
      * @throws FilesystemException If the file cannot be moved
      * @return bool                Whether the phar is valid and has been moved
      */
-    protected function setLocalPhar($localFilename, $newFilename, $backupTarget = null)
+    protected function setLocalPhar(string $localFilename, string $newFilename, string $backupTarget = null): bool
     {
         $io = $this->getIO();
         @chmod($newFilename, fileperms($localFilename));
@@ -480,7 +488,7 @@ TAGSPUBKEY
      *
      * @return void
      */
-    protected function cleanBackups($rollbackDir, $except = null)
+    protected function cleanBackups(string $rollbackDir, ?string $except = null): void
     {
         $finder = $this->getOldInstallationFinder($rollbackDir);
         $io = $this->getIO();
@@ -500,14 +508,14 @@ TAGSPUBKEY
      * @param string $rollbackDir
      * @return string|false
      */
-    protected function getLastBackupVersion($rollbackDir)
+    protected function getLastBackupVersion(string $rollbackDir)
     {
         $finder = $this->getOldInstallationFinder($rollbackDir);
         $finder->sortByName();
         $files = iterator_to_array($finder);
 
         if (count($files)) {
-            return basename(end($files), self::OLD_INSTALL_EXT);
+            return end($files)->getBasename(self::OLD_INSTALL_EXT);
         }
 
         return false;
@@ -517,7 +525,7 @@ TAGSPUBKEY
      * @param string $rollbackDir
      * @return Finder
      */
-    protected function getOldInstallationFinder($rollbackDir)
+    protected function getOldInstallationFinder(string $rollbackDir): Finder
     {
         return Finder::create()
             ->depth(0)
@@ -538,7 +546,7 @@ TAGSPUBKEY
      * @throws \Exception
      * @return bool       If the operation succeeded
      */
-    protected function validatePhar($pharFile, &$error)
+    protected function validatePhar(string $pharFile, ?string &$error): bool
     {
         if (ini_get('phar.readonly')) {
             return true;
@@ -566,7 +574,7 @@ TAGSPUBKEY
      *
      * @return bool
      */
-    protected function isWindowsNonAdminUser()
+    protected function isWindowsNonAdminUser(): bool
     {
         if (!Platform::isWindows()) {
             return false;
@@ -587,7 +595,7 @@ TAGSPUBKEY
      * @param  string $newFilename   The downloaded or backup phar
      * @return bool   Whether composer.phar has been updated
      */
-    protected function tryAsWindowsAdmin($localFilename, $newFilename)
+    protected function tryAsWindowsAdmin(string $localFilename, string $newFilename): bool
     {
         $io = $this->getIO();
 

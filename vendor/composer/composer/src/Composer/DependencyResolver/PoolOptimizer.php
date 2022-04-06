@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 /*
  * This file is part of Composer.
@@ -71,7 +71,7 @@ class PoolOptimizer
     /**
      * @return Pool
      */
-    public function optimize(Request $request, Pool $pool)
+    public function optimize(Request $request, Pool $pool): Pool
     {
         $this->prepare($request, $pool);
 
@@ -99,7 +99,7 @@ class PoolOptimizer
     /**
      * @return void
      */
-    private function prepare(Request $request, Pool $pool)
+    private function prepare(Request $request, Pool $pool): void
     {
         $irremovablePackageConstraintGroups = array();
 
@@ -152,7 +152,7 @@ class PoolOptimizer
     /**
      * @return void
      */
-    private function markPackageIrremovable(BasePackage $package)
+    private function markPackageIrremovable(BasePackage $package): void
     {
         $this->irremovablePackages[$package->id] = true;
         if ($package instanceof AliasPackage) {
@@ -170,7 +170,7 @@ class PoolOptimizer
     /**
      * @return Pool Optimized pool
      */
-    private function applyRemovalsToPool(Pool $pool)
+    private function applyRemovalsToPool(Pool $pool): Pool
     {
         $packages = array();
         $removedVersions = array();
@@ -190,7 +190,7 @@ class PoolOptimizer
     /**
      * @return void
      */
-    private function optimizeByIdenticalDependencies(Request $request, Pool $pool)
+    private function optimizeByIdenticalDependencies(Request $request, Pool $pool): void
     {
         $identicalDefinitionsPerPackage = array();
         $packageIdenticalDefinitionLookup = array();
@@ -208,7 +208,6 @@ class PoolOptimizer
             $dependencyHash = $this->calculateDependencyHash($package);
 
             foreach ($package->getNames(false) as $packageName) {
-
                 if (!isset($this->requireConstraintsPerPackage[$packageName])) {
                     continue;
                 }
@@ -276,7 +275,7 @@ class PoolOptimizer
     /**
      * @return string
      */
-    private function calculateDependencyHash(BasePackage $package)
+    private function calculateDependencyHash(BasePackage $package): string
     {
         $hash = '';
 
@@ -284,7 +283,7 @@ class PoolOptimizer
             'requires' => $package->getRequires(),
             'conflicts' => $package->getConflicts(),
             'replaces' => $package->getReplaces(),
-            'provides' => $package->getProvides()
+            'provides' => $package->getProvides(),
         );
 
         foreach ($hashRelevantLinks as $key => $links) {
@@ -320,7 +319,7 @@ class PoolOptimizer
      * @param int $id
      * @return void
      */
-    private function markPackageForRemoval($id)
+    private function markPackageForRemoval(int $id): void
     {
         // We are not allowed to remove packages if they have been marked as irremovable
         if (isset($this->irremovablePackages[$id])) {
@@ -335,7 +334,7 @@ class PoolOptimizer
      * @param array<int, array<string, array{groupHash: string, dependencyHash: string}>> $packageIdenticalDefinitionLookup
      * @return void
      */
-    private function keepPackage(BasePackage $package, $identicalDefinitionsPerPackage, $packageIdenticalDefinitionLookup)
+    private function keepPackage(BasePackage $package, array $identicalDefinitionsPerPackage, array $packageIdenticalDefinitionLookup): void
     {
         // Already marked to keep
         if (!isset($this->packagesToRemove[$package->id])) {
@@ -392,7 +391,7 @@ class PoolOptimizer
      *
      * @return void
      */
-    private function optimizeImpossiblePackagesAway(Request $request, Pool $pool)
+    private function optimizeImpossiblePackagesAway(Request $request, Pool $pool): void
     {
         if (count($request->getLockedPackages()) === 0) {
             return;

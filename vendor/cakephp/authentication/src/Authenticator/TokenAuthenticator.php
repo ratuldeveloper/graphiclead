@@ -27,7 +27,7 @@ use Psr\Http\Message\ServerRequestInterface;
 class TokenAuthenticator extends AbstractAuthenticator implements StatelessInterface
 {
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     protected $_defaultConfig = [
         'header' => null,
@@ -88,27 +88,28 @@ class TokenAuthenticator extends AbstractAuthenticator implements StatelessInter
     }
 
     /**
-     * Gets the token from the request headers
+     * Gets the token from the request query
      *
      * @param \Psr\Http\Message\ServerRequestInterface $request The request that contains login information.
      * @param string $queryParam Request query parameter name
      * @return string|null
      */
-    protected function getTokenFromQuery(ServerRequestInterface $request, string $queryParam): ?string
+    protected function getTokenFromQuery(ServerRequestInterface $request, ?string $queryParam): ?string
     {
-        $queryParams = $request->getQueryParams();
-
-        if (empty($queryParams[$queryParam])) {
+        if (empty($queryParam)) {
             return null;
         }
 
-        return $queryParams[$queryParam];
+        $queryParams = $request->getQueryParams();
+
+        return $queryParams[$queryParam] ?? null;
     }
 
     /**
-     * Authenticates the identity contained in a request. Will use the `config.userModel`, and `config.fields`
-     * to find POST data that is used to find a matching record in the `config.userModel`. Will return false if
-     * there is no post data, either username or password is missing, or if the scope conditions have not been met.
+     * Authenticates the identity by token contained in a request.
+     * Token could be passed as query using `config.queryParam` or as header param using `config.header`. Token
+     * prefix will be stripped if `config.tokenPrefix` is set. Will return false if no token is provided or if the
+     * scope conditions have not been met.
      *
      * @param \Psr\Http\Message\ServerRequestInterface $request The request that contains login information.
      * @return \Authentication\Authenticator\ResultInterface

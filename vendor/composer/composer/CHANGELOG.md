@@ -1,3 +1,73 @@
+### [2.3.3] 2022-04-01
+
+  * Added --2.2 flag to `self-update` to pin the Composer version to the 2.2 LTS range (#10682)
+  * Added missing config.bitbucket-oauth in composer-schema.json
+  * Fixed type errors in SvnDriver (#10681)
+  * Fixed --version output to match the pre-2.3 one (#10684)
+  * Fixed config/auth.json files not being validated against the composer-schema.json (#10685)
+  * Fixed generation of autoload crashing if a package has a broken path (#10688)
+  * Fixed GitDriver state issue when reusing old cache dirs and the default branch was renamed (#10687)
+  * Updated semver, jsonlint deps for minor fixes
+  * Removed dev-master=>dev-main alias from #10372 as it does not work when reloading from lock file and extracting dev deps (#10651)
+
+### [2.3.2] 2022-03-30
+
+  * Fixed type error when running `exec` command (#10672)
+  * Fixed endless loop in plugin activation prompt when input is not fully interactive yet appears to be (#10648)
+  * Fixed type error in ComposerRepository (#10675)
+  * Fixed issues loading platform packages where the version of a library cannot be established (#10631)
+
+### [2.3.1] 2022-03-30
+
+  * Fixed type error when HOME env var is not set (#10670)
+
+### [2.3.0] 2022-03-30
+
+  * Fixed many strict types errors (#10646, #10642, #10647, #10658, #10656, #10665, #10660, #10663, #10662)
+
+### [2.3.0-RC2] 2022-03-20
+
+  * Fixed invalid return value in ComposerRepository::findPackage (#10622)
+  * Fixed many `show` command issues due to a flipped condition (#10623)
+  * Fixed `phpversion()` handling when it returns false due to an extension defining no version (#10631)
+  * Fixed `remove` command failing when no `allow-plugin` is defined in config (#10629)
+  * Performance improvement in Composer bootstrapping (version guessing) when on a feature branch (#10632)
+
+### [2.3.0-RC1] 2022-03-16
+
+  * BC Break: the minimum PHP version is now 7.2.5+, use the [Composer 2.2 LTS](https://github.com/composer/composer/issues/10340) if you are stuck with an older PHP (#10343)
+  * BC Break: added native parameter & return types to many internal APIs, we explicitly left the most extended/implemented symbols untouched but if this causes problems nonetheless please report it ASAP (#10547, #10561)
+  * BC Break: added visibility to all constants, a few internal ones have been made private/protected, if this causes problems please report it ASAP (#10550)
+  * BC Break: the minimum supported Symfony components version is now 5.4, this only affects you if you are requiring composer/composer directly however, which is generally frowned upon
+  * Bumped `composer-plugin-api` to `2.3.0`
+  * Bumped bundled Symfony components from 2.8 to 5.4 🥳
+  * Added `declare(strict_types=1)` to all the classes, which for sure could cause regressions in edge cases, please report with stack traces (#10567)
+  * Added `--patch-only` to the `outdated` command to only show updates to patch versions and ignore new major/minor versions (#10589)
+  * Added clickable links to various commands for terminals which support it (#10430)
+  * Added ProcessExecutor ability to receive commands as arrays by (internals/plugin change only) (#10435)
+  * Added abandoned flag to `show`/`outdated` commands JSON-formatted output (#10485)
+  * Added config.reference option to `path` repositories to configure the way the reference is generated, and possibly reduce composer.lock conflicts (#10488)
+  * Added automatic removal of allow-plugins rules when removing a plugin via the `remove` command (#10615)
+  * Added COMPOSER_IGNORE_PLATFOR_REQ & COMPOSER_IGNORE_PLATFOR_REQS env vars to configure the equivalent flags (#10616)
+  * Added support for Symfony 6.0 components
+  * Added support for psr/log 3.x (#10454)
+  * Fixed symlink creation in linux VM guest filesystems to be recognized by Windows (#10592)
+  * Performance improvement in pool optimization step (#10585)
+
+### [2.2.11] 2022-04-01
+
+  * Added missing config.bitbucket-oauth in composer-schema.json
+  * Added --2.2 flag to `self-update` to pin the Composer version to the 2.2 LTS range (#10682)
+  * Updated semver, jsonlint deps for minor fixes
+  * Fixed generation of autoload crashing if a package has a broken path (#10688)
+  * Removed dev-master=>dev-main alias from #10372 as it does not work when reloading from lock file and extracting dev deps (#10651)
+
+### [2.2.10] 2022-03-29
+
+  * Fixed Bitbucket authorization detection due to API changes (#10657)
+  * Fixed validate command warning about dist/source keys if defined (#10655)
+  * Fixed deletion/handling of corrupted 0-bytes zip archives (#10666)
+
 ### [2.2.9] 2022-03-15
 
   * Fixed regression with plugins that modify install path of packages, [see docs](https://getcomposer.org/doc/articles/plugins.md#plugin-modifies-install-path) if you are authoring such a plugin (#10621)
@@ -1406,6 +1476,14 @@
 
   * Initial release
 
+[2.3.3]: https://github.com/composer/composer/compare/2.3.2...2.3.3
+[2.3.2]: https://github.com/composer/composer/compare/2.3.1...2.3.2
+[2.3.1]: https://github.com/composer/composer/compare/2.3.0...2.3.1
+[2.3.0]: https://github.com/composer/composer/compare/2.3.0-RC2...2.3.0
+[2.3.0-RC2]: https://github.com/composer/composer/compare/2.3.0-RC1...2.3.0-RC2
+[2.3.0-RC1]: https://github.com/composer/composer/compare/2.2.9...2.3.0-RC1
+[2.2.11]: https://github.com/composer/composer/compare/2.2.10...2.2.11
+[2.2.10]: https://github.com/composer/composer/compare/2.2.9...2.2.10
 [2.2.9]: https://github.com/composer/composer/compare/2.2.8...2.2.9
 [2.2.8]: https://github.com/composer/composer/compare/2.2.7...2.2.8
 [2.2.7]: https://github.com/composer/composer/compare/2.2.6...2.2.7
