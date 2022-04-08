@@ -9,8 +9,8 @@ info:
   license:
     name: YOUR-LICENSE-HERE
 servers:
-  - url: /
-paths:
+  - url: /api
+paths: 
 
 definitions:
 

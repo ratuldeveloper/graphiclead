@@ -78,8 +78,9 @@ class Application extends BaseApplication implements AuthenticationServiceProvid
         }
         $this->addPlugin('Authentication');
         // Load more plugins here
-        $this->addPlugin('SwaggerBake');
+        //$this->addPlugin('SwaggerBake');
        // $this->addPlugin('ApiTokenAuthenticator');
+        $this->addPlugin('SwaggerBake');
     }
 
     /**

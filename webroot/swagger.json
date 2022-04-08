@@ -10,18 +10,19 @@
     },
     "servers": [
         {
-            "url": "\/"
+            "url": "\/api"
         }
     ],
     "paths": {
         "\/api\/imageqr": {
+            "tags": [],
             "post": {
+                "operationId": "api:imagesqr:postimageqr:post",
                 "summary": "",
                 "description": "",
                 "tags": [
                     "Images Qr"
                 ],
-                "operationId": "api:imagesqr:postimageqr:post",
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -31,30 +32,31 @@
                                 "schema": {
                                     "description": ""
                                 }
-                            },
-                            "application\/xml": {
-                                "schema": {
-                                    "xml": {
-                                        "name": "response"
-                                    },
-                                    "description": ""
-                                }
                             }
                         }
                     }
-                },
-                "deprecated": false
+                }
             }
         },
         "\/api\/imageqr\/{id}": {
+            "tags": [],
             "get": {
+                "operationId": "api:imagesqr:getimageqrbyid:get",
                 "summary": "",
                 "description": "",
                 "tags": [
                     "Images Qr"
                 ],
-                "operationId": "api:imagesqr:getimageqrbyid:get",
-                "parameters": [],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "",
@@ -63,28 +65,28 @@
                                 "schema": {
                                     "description": ""
                                 }
-                            },
-                            "application\/xml": {
-                                "schema": {
-                                    "xml": {
-                                        "name": "response"
-                                    },
-                                    "description": ""
-                                }
                             }
                         }
                     }
-                },
-                "deprecated": false
+                }
             },
             "put": {
+                "operationId": "api:imagesqr:updateimageqrbyid:put",
                 "summary": "",
                 "description": "",
                 "tags": [
                     "Images Qr"
                 ],
-                "operationId": "api:imagesqr:updateimageqrbyid:put",
-                "parameters": [],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "",
@@ -93,29 +95,21 @@
                                 "schema": {
                                     "description": ""
                                 }
-                            },
-                            "application\/xml": {
-                                "schema": {
-                                    "xml": {
-                                        "name": "response"
-                                    },
-                                    "description": ""
-                                }
                             }
                         }
                     }
-                },
-                "deprecated": false
+                }
             }
         },
         "\/api\/imagequeue": {
+            "tags": [],
             "get": {
+                "operationId": "api:imagesqr:getallimagequeue:get",
                 "summary": "",
                 "description": "",
                 "tags": [
                     "Images Qr"
                 ],
-                "operationId": "api:imagesqr:getallimagequeue:get",
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -125,29 +119,21 @@
                                 "schema": {
                                     "description": ""
                                 }
-                            },
-                            "application\/xml": {
-                                "schema": {
-                                    "xml": {
-                                        "name": "response"
-                                    },
-                                    "description": ""
-                                }
                             }
                         }
                     }
-                },
-                "deprecated": false
+                }
             }
         },
         "\/api\/users": {
+            "tags": [],
             "get": {
+                "operationId": "api:users:index:get",
                 "summary": "",
                 "description": "",
                 "tags": [
                     "Users"
                 ],
-                "operationId": "api:users:index:get",
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -157,29 +143,21 @@
                                 "schema": {
                                     "description": ""
                                 }
-                            },
-                            "application\/xml": {
-                                "schema": {
-                                    "xml": {
-                                        "name": "response"
-                                    },
-                                    "description": ""
-                                }
                             }
                         }
                     }
-                },
-                "deprecated": false
+                }
             }
         },
         "\/api\/users\/login": {
+            "tags": [],
             "post": {
+                "operationId": "api:users:login:post",
                 "summary": "User login",
                 "description": "Your Swagger forms are built automatically straight from your Cake Models and Routes, without the need for\nadditional annotations! All batteries were included in this example.",
                 "tags": [
                     "Users"
                 ],
-                "operationId": "api:users:login:post",
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -189,29 +167,21 @@
                                 "schema": {
                                     "description": ""
                                 }
-                            },
-                            "application\/xml": {
-                                "schema": {
-                                    "xml": {
-                                        "name": "response"
-                                    },
-                                    "description": ""
-                                }
                             }
                         }
                     }
-                },
-                "deprecated": false
+                }
             }
         },
         "\/api\/users\/register": {
+            "tags": [],
             "post": {
+                "operationId": "api:users:register:post",
                 "summary": "",
                 "description": "",
                 "tags": [
                     "Users"
                 ],
-                "operationId": "api:users:register:post",
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -221,19 +191,10 @@
                                 "schema": {
                                     "description": ""
                                 }
-                            },
-                            "application\/xml": {
-                                "schema": {
-                                    "xml": {
-                                        "name": "response"
-                                    },
-                                    "description": ""
-                                }
                             }
                         }
                     }
-                },
-                "deprecated": false
+                }
             }
         }
     },
@@ -258,20 +219,21 @@
                 "xml": {
                     "name": "response"
                 },
-                "description": "",
-                "type": "object"
+                "type": "object",
+                "description": ""
             },
             "OperationResult": {
                 "properties": {
                     "result": {
+                        "example": "",
                         "type": "boolean"
                     }
                 },
                 "xml": {
                     "name": "response"
                 },
-                "description": "",
-                "type": "object"
+                "type": "object",
+                "description": ""
             }
         }
     },
@@ -295,7 +257,7 @@
                     }
                 },
                 "paginatorSort": {
-                    "name": "direction",
+                    "name": "sort",
                     "in": "query",
                     "required": false,
                     "schema": {

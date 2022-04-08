@@ -1,0 +1,138 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Graphic lead",
+		"_postman_id": "68bde12d-9e68-771f-3e10-c3acefd83a9f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Image Qr",
+			"request": {
+				"url": "https://devapi.graphiclead.com/cv1/api/imageqr",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-UW211-KEY",
+						"value": "PnzHaPzfyv5nGUEOYag1Hw",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpZCI6OSwic3ViIjo5LCJpYXQiOjE2NDkyNjMyODcsImV4cCI6MTY0OTI2MzM0N30.yV4IJBNbVGYTh5eyI7B3fuYEjHLQbEcURKy5zfrOzoOPwlQ4v0pauN55QlN_esQRlYKf4ZsxhS9K-RngsnPa69bakeYXYQg6YjcZ0imiZpoxznFkTYnWFccVdQpAdtCtPCpFlcdE-z45rOxUIwiT6hkkjCBTEKXm-ZakTj89wSo",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": \"encoded data\",\n  \"image\": {\n    \"method\": \"url\",\n    \"url\": \"https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500\"\n  },\n  \"attributes\": {\n    \"error_correction\": \"H\",\n    \"quiet_zone\": 3,\n    \"version\": 2,\n    \"rotate\": 90,\n    \"eye_shape\": \"rounded\"\n  },\n  \"output\": {\n    \"format\": \"png\",\n    \"callback\": \"\"\n  }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Users",
+			"request": {
+				"url": "https://devapi.graphiclead.com/cv1/api/users/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-UW211-KEY",
+						"value": "PnzHaPzfyv5nGUEOYag1Hw",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpZCI6Niwic3ViIjo2LCJpYXQiOjE2NDg4NzY2NDQsImV4cCI6MTY0ODk2MzA0NH0.Kvipe4Gs0c1j9aWay52sOE74t9ShfczVWqamSv9TGhs7fU0LfF1WUgbLlwnGKWerx9IPII__JwEnxH31PLL3f5HpSzJJJpTrWEvAP1InT3VdpTwqKTB_mS_dmnRCLm7eLraQbFGIZ_YijCClWlHNnuaXgz1FLqKH9RX_X__XNbc",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user_name\":\"ratul\",\n\t\"email\": \"ratul.etce@gmail.com\",\n\t\"password\": \"ratul1991\",\n\t\"first_name\": \"Ratul\",\n\t\"last_name\": \"Samanta\",\n\t\"company\": \"Freelancer\",\n\t\"code_count\": 4\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User Registration",
+			"request": {
+				"url": "https://devapi.graphiclead.com/cv1/api/users/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-UW211-KEY",
+						"value": "PnzHaPzfyv5nGUEOYag1Hw",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpZCI6Niwic3ViIjo2LCJpYXQiOjE2NDg4NzY2NDQsImV4cCI6MTY0ODk2MzA0NH0.Kvipe4Gs0c1j9aWay52sOE74t9ShfczVWqamSv9TGhs7fU0LfF1WUgbLlwnGKWerx9IPII__JwEnxH31PLL3f5HpSzJJJpTrWEvAP1InT3VdpTwqKTB_mS_dmnRCLm7eLraQbFGIZ_YijCClWlHNnuaXgz1FLqKH9RX_X__XNbc",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user_name\":\"ratul\",\n\t\"email\": \"ratul.etce@gmail.com\",\n\t\"password\": \"ratul1991\",\n\t\"first_name\": \"Ratul\",\n\t\"last_name\": \"Samanta\",\n\t\"company\": \"Freelancer\",\n\t\"code_count\": 4\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User login",
+			"request": {
+				"url": "https://devapi.graphiclead.com/cv1/api/users/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-UW211-KEY",
+						"value": "PnzHaPzfyv5nGUEOYag1Hw",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpZCI6Niwic3ViIjo2LCJpYXQiOjE2NDg4NzY2NDQsImV4cCI6MTY0ODk2MzA0NH0.Kvipe4Gs0c1j9aWay52sOE74t9ShfczVWqamSv9TGhs7fU0LfF1WUgbLlwnGKWerx9IPII__JwEnxH31PLL3f5HpSzJJJpTrWEvAP1InT3VdpTwqKTB_mS_dmnRCLm7eLraQbFGIZ_YijCClWlHNnuaXgz1FLqKH9RX_X__XNbc",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"ratul.etce@gmail.com\",\n\t\"password\": \"ratul1991\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
