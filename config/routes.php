@@ -65,29 +65,24 @@ return static function (RouteBuilder $routes) {
     $routes->prefix('api',function(RouteBuilder $routes) {
         $routes->setExtensions(['json']);
         
-        $routes->resources('Users',['map' => [
-            'login' => [
-                'action' => 'login',
-                'method' => ['post']
-            ],
-            'register' => [
-                'action' => 'register',
-                'method' => ['post']
-            ]
-            ],
-            'only' => ['index', 'login','register']
-        ]);
-        //$routes->resources('ImagesQr');
+        $routes->post(
+            '/login',
+            ['controller' => 'Users', 'action' => 'login'],
+        );
+        $routes->post(
+            '/register',
+            ['controller' => 'Users', 'action' => 'register'],
+        );
         $routes->post(
             '/imageqr',
             ['controller' => 'ImagesQr', 'action' => 'postImageQr'],
         );
         $routes->put(
-            '/imageqr/{id}',
+            '/imageqr/{uuid}',
             ['controller' => 'ImagesQr', 'action' => 'updateImageQrById'],
         );
         $routes->get(
-            '/imageqr/{id}',
+            '/imageqr/{uuid}',
             ['controller' => 'ImagesQr', 'action' => 'getImageQrById'],
         );
         $routes->get(

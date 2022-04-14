@@ -80,7 +80,7 @@ class Application extends BaseApplication implements AuthenticationServiceProvid
         // Load more plugins here
         //$this->addPlugin('SwaggerBake');
        // $this->addPlugin('ApiTokenAuthenticator');
-        $this->addPlugin('SwaggerBake');
+        $this->addPlugin('SwaggerBake',['bootstrap' => true, 'routes' => true]);
     }
 
     /**
@@ -94,6 +94,7 @@ class Application extends BaseApplication implements AuthenticationServiceProvid
         $csrf = new CsrfProtectionMiddleware([
             'httponly' => true,
         ]);
+        $bodyParser = new BodyParserMiddleware();
         $middlewareQueue
             // Catch any exceptions in the lower layers,
             // and make an error page/response
@@ -115,11 +116,22 @@ class Application extends BaseApplication implements AuthenticationServiceProvid
             // Parse various types of encoded request bodies so that they are
             // available as array through $request->getData()
             // https://book.cakephp.org/4/en/controllers/middleware.html#body-parser-middleware
-            ->add(new BodyParserMiddleware())
+            ->add($bodyParser)
 
             // Cross Site Request Forgery (CSRF) Protection Middleware
             // https://book.cakephp.org/4/en/controllers/middleware.html#cross-site-request-forgery-csrf-middleware
             ->add(new AuthenticationMiddleware($this));
+
+            // $bodyParser->addParser(['multipart/form-data'],function($body,$request) {
+            //     echo "<pre>";
+            //     print_r($body);
+            //     echo "</pre>";
+            //     exit();
+            //     return $body;
+            // });
+            // $bodyParser->addParser(['text/html'],function($body){
+            //     return $this;
+            // });
 
             $csrf->skipCheckCallback(function ($request) {
                 // Skip token check for API URLs.
@@ -163,7 +175,7 @@ class Application extends BaseApplication implements AuthenticationServiceProvid
                 'username' => 'email',
                 'password' => 'password',
             ],
-            'loginUrl' => Router::url('/api/users/login'),
+            'loginUrl' => Router::url('/api/login'),
             'returnPayload' => false,
             'passwordHasher' => 'default',
         ]);

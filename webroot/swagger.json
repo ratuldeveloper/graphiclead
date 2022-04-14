@@ -10,7 +10,7 @@
     },
     "servers": [
         {
-            "url": "\/api"
+            "url": "\/"
         }
     ],
     "paths": {
@@ -38,7 +38,7 @@
                 }
             }
         },
-        "\/api\/imageqr\/{id}": {
+        "\/api\/imageqr\/{uuid}": {
             "tags": [],
             "get": {
                 "operationId": "api:imagesqr:getimageqrbyid:get",
@@ -50,7 +50,7 @@
                 "parameters": [
                     {
                         "in": "path",
-                        "name": "id",
+                        "name": "uuid",
                         "required": true,
                         "schema": {
                             "type": "string"
@@ -80,7 +80,7 @@
                 "parameters": [
                     {
                         "in": "path",
-                        "name": "id",
+                        "name": "uuid",
                         "required": true,
                         "schema": {
                             "type": "string"
@@ -125,31 +125,7 @@
                 }
             }
         },
-        "\/api\/users": {
-            "tags": [],
-            "get": {
-                "operationId": "api:users:index:get",
-                "summary": "",
-                "description": "",
-                "tags": [
-                    "Users"
-                ],
-                "parameters": [],
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application\/json": {
-                                "schema": {
-                                    "description": ""
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "\/api\/users\/login": {
+        "\/api\/login": {
             "tags": [],
             "post": {
                 "operationId": "api:users:login:post",
@@ -173,7 +149,7 @@
                 }
             }
         },
-        "\/api\/users\/register": {
+        "\/api\/register": {
             "tags": [],
             "post": {
                 "operationId": "api:users:register:post",
@@ -201,6 +177,53 @@
     "definitions": null,
     "components": {
         "schemas": {
+            "Entity": {
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int64",
+                        "readOnly": true
+                    },
+                    "uuid": {
+                        "minLength": 1,
+                        "type": "string"
+                    },
+                    "user_id": {
+                        "minLength": 1,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "content_type": {
+                        "minLength": 1,
+                        "type": "string"
+                    },
+                    "image_url": {
+                        "minLength": 1,
+                        "type": "string"
+                    },
+                    "submitted": {
+                        "minLength": 1,
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "processed": {
+                        "minLength": 1,
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "ttl": {
+                        "minLength": 1,
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "status": {
+                        "minLength": 1,
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "description": ""
+            },
             "Exception": {
                 "properties": {
                     "code": {
@@ -231,6 +254,74 @@
                 },
                 "xml": {
                     "name": "response"
+                },
+                "type": "object",
+                "description": ""
+            },
+            "User": {
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int64",
+                        "readOnly": true
+                    },
+                    "user_name": {
+                        "minLength": 1,
+                        "type": "string"
+                    },
+                    "password": {
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "type": "string"
+                    },
+                    "email": {
+                        "minLength": 1,
+                        "type": "string"
+                    },
+                    "first_name": {
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "type": "string"
+                    },
+                    "company": {
+                        "minLength": 1,
+                        "type": "string"
+                    },
+                    "active": {
+                        "minLength": 1,
+                        "type": "boolean"
+                    },
+                    "token": {
+                        "minLength": 1,
+                        "type": "string"
+                    },
+                    "last_login": {
+                        "minLength": 1,
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "code_count": {
+                        "minLength": 1,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "created": {
+                        "minLength": 1,
+                        "type": "string",
+                        "format": "date-time",
+                        "readOnly": true
+                    },
+                    "modified": {
+                        "minLength": 1,
+                        "type": "string",
+                        "format": "date-time",
+                        "readOnly": true
+                    }
                 },
                 "type": "object",
                 "description": ""

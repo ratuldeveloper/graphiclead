@@ -16,7 +16,8 @@ use Exception;
  * @method \App\Model\Entity\ImagesQr[]
  */
 class ImagesQrController extends ApiController {
-
+   
+    private $_userData;
     private $_attributeConfiguration = [
         'error_correction' => ['L','M','Q','H'],
         'quiet_zone' => [0,1,2,3,4],
@@ -26,15 +27,45 @@ class ImagesQrController extends ApiController {
     ];
     public function initialize(): void {
         parent::initialize();
+        $this->_userData = $this->_getAuthorizeUserData();
         //$this->viewBuilder()->setClassName('Json');
     }
     public function beforeFilter(\Cake\Event\EventInterface $event){
-        parent::beforeFilter($event);
+        //parent::beforeFilter($event);
     }
     public function getImageQrById() {
+        $responseData = [];
+        try {
+            $imageQruuId = $this->request->getParam('uuid');
+            $imageQrData = $this->ImagesQr->find()
+                            ->where(['uuid = ' => $imageQruuId])
+                            ->where(['user_id' => $this->_userData->id])
+                            ->first();
+            if(empty($imageQrData)) {
+                throw new ApiException("Invalid image qr id",422);
+            }
+            if(!$imageQrData->submitted) {
+                throw new ApiException("Qr image is not submitted yet",400);
+            }
+            $this->response = $this->getResponse()->withHeader('Content-Type',$imageQrData->content_type);
+            $this->response = $this->getResponse()->withFile(Configure::read('App.qrimagepath').$imageQrData->image_url);
+            return $this->response;
+        } catch(Exception $e) {
+            $this->response = $this->getResponse()->withStatus($e->getCode());
+            $responseData['details'] = [
+                'message' => $e->getMessage(),
+            ];
 
+         }
+         $this->set($responseData);
+        
     }
     public function getAllImageQueue() {
+        $imageQrData = $this->ImagesQr->find('all')
+                            ->where(['user_id' => $this->_userData->id]);
+        $imageQrDataArray = $imageQrData->all()->toArray();
+                            
+        $this->set($imageQrDataArray);
 
     }
     public function postImageQr() {
@@ -73,8 +104,8 @@ class ImagesQrController extends ApiController {
 
             }
         } catch(ApiException $e) {
-            $errorData['error'] = [
-                'message' => $e->getMessage(),
+            $errorData['details'] = [
+                $e->getMessage(),
             ];
             $errorData['status'] = $e->getCode();
             $this->set($errorData);
@@ -83,7 +114,32 @@ class ImagesQrController extends ApiController {
         
     }
     public function updateImageQrById() {
+        try {
+            $imageQruuId = $this->request->getParam('uuid');
+            $filesData = $this->request->input();
+            $uploadedFileData =  Utility::uploadImageFromBinaryData($filesData,$imageQruuId);
+            $imageQrData = $this->ImagesQr->find()
+                            ->where(['uuid = ' => $imageQruuId])
+                            ->where(['user_id' => $this->_userData->id])
+                            ->first();
+            if(!$imageQrData) {
+                throw new ApiException("Invalid uuid",400);
+            }
+            $imageQrData->image_url = $uploadedFileData['file_name'];
+            $imageQrData->content_type = $uploadedFileData['content_type'];
+            $imageQrData->submitted = date('Y-m-d H:i:s');
+            $imageQrData->status = Configure::read('Status')['STATUS_SUBMITTED'];
+            $this->ImagesQr->save($imageQrData);
+            $this->set($uploadedFileData);
 
+        } catch(Exception $e) {
+            $errorData['details'] = [
+                $e->getMessage(),
+            ];
+            $errorData['status'] = $e->getCode();
+            $this->set($errorData);
+            $this->response = $this->getResponse()->withStatus($e->getCode());
+        }
     }
 
     private function _saveImageQrEntity($requestData) {

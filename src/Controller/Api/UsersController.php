@@ -31,15 +31,6 @@ class UsersController extends ApiController {
             'register'
         ]);
     }
-    public function index() {
-        $this->request->allowMethod(['get']);
-        $users = [];
-        $userData = new stdClass();
-        $userData->name = 'Ratul Samanta';
-        $userData->age = 30;
-        $users[] = $userData;
-        $this->set('users',$users);
-    }
     /**
      * User login
      *
@@ -55,7 +46,7 @@ class UsersController extends ApiController {
             $privateKey = file_get_contents(CONFIG . '/ssl/jwt.key');
             $user = $result->getData();
             $iat = time();
-            $expiry = time()+60;
+            $expiry = time()+8600;
             $token = JWT::encode([
                 'id' => $user['id'],
                 'sub' => $user['id'],

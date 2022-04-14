@@ -56,6 +56,8 @@ return [
         'dir' => 'src',
         'webroot' => 'webroot',
         'wwwRoot' => WWW_ROOT,
+        'uploadedFilesAsObjects' => false,
+        'qrimagepath' => WWW_ROOT.DS.'img'.DS.'qrimage'.DS,
         //'baseUrl' => env('SCRIPT_NAME'),
         'fullBaseUrl' => false,
         'imageBaseUrl' => 'img/',

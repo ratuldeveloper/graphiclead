@@ -91,3 +91,75 @@ Stack Trace:
 
 
 
+2022-04-14 13:12:36 error: [Exception] The request object does not contain the required `authentication` attribute in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 142
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:228
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ApiController.php:31
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:30
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:221
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Model\ModelScanner.php:76
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\OpenApiSchemaGenerator.php:31
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Swagger.php:54
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\SwaggerFactory.php:51
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Command\BakeCommand.php:64
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\graphiclead\bin\cake.php:12
+
+
+
+2022-04-14 13:15:36 error: [Exception] The request object does not contain the required `authentication` attribute in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 142
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:228
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ApiController.php:31
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:30
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:221
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Model\ModelScanner.php:76
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\OpenApiSchemaGenerator.php:31
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Swagger.php:54
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\SwaggerFactory.php:51
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Command\BakeCommand.php:64
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\graphiclead\bin\cake.php:12
+
+
+
+2022-04-14 13:16:52 error: [Exception] The request object does not contain the required `authentication` attribute in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 142
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:228
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ApiController.php:31
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:30
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:221
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Model\ModelScanner.php:76
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\OpenApiSchemaGenerator.php:31
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Swagger.php:54
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\SwaggerFactory.php:51
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Command\BakeCommand.php:64
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\graphiclead\bin\cake.php:12
+
+
+
+2022-04-14 13:18:43 error: [Exception] The request object does not contain the required `authentication` attribute in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 142
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:228
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ApiController.php:31
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:30
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:221
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Model\ModelScanner.php:76
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\OpenApiSchemaGenerator.php:31
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Swagger.php:54
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\SwaggerFactory.php:51
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Command\BakeCommand.php:64
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\graphiclead\bin\cake.php:12
+
+
+

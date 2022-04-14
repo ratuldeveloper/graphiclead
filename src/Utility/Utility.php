@@ -49,6 +49,26 @@ class Utility {
         $finfo = new finfo(FILEINFO_MIME_TYPE);
         return $finfo->buffer($buffer);
     }
+    private static function getBinaryImageMimeType($imageData) {
+        $finfo = new finfo(FILEINFO_MIME_TYPE);
+        return $finfo->buffer($imageData);
+    }
+
+    public static function uploadImageFromBinaryData($imageData,$uuid) {
+        $imageMimeType = self::getBinaryImageMimeType($imageData);
+        if(!array_key_exists($imageMimeType,self::$_supportedImageType)) {
+            throw new Exception("Please use only png and jpg image");
+        }
+        $imageExtension = self::$_supportedImageType[$imageMimeType];
+        $fileName = $uuid.'.'.$imageExtension;
+        $imagePath = WWW_ROOT.'img'. DS . 'qrimage'.DS.$fileName;
+        file_put_contents($imagePath,$imageData);
+        return [
+            'file_name' => $fileName,
+            'file_size' => filesize($imagePath),
+            'content_type' => $imageMimeType,
+        ];
+    }
     
     private static function _numberDivider($max,$count) {
         $numbers = [];
@@ -62,6 +82,9 @@ class Utility {
         return $numbers;
 
     }
+
+
+
     
 }
 

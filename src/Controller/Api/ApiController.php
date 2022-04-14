@@ -26,5 +26,17 @@ class ApiController extends Controller {
         parent::beforeRender($event);
         $this->viewBuilder()->setVar('_serialize', array_keys($this->viewBuilder()->getVars()));
     }
+
+    protected function _getAuthorizeUserData() {
+        if($this->request->getAttribute('authentication')) {
+            $result = $this->Authentication->getResult();
+            if(!$result->isValid()) {
+                return false;
+            }
+            return $result->getData();
+
+        }
+        
+    }
 }
 ?>

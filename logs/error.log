@@ -9895,3 +9895,2332 @@ Stack Trace:
 Request URL: /swagger?url=swagger
 
 
+2022-04-09 10:17:39 error: [Cake\View\Exception\MissingTemplateException] Template file `Swagger\index.php` could not be found.
+
+The following paths were searched:
+
+- `C:\xampp\htdocs\graphiclead\templates\plugin\SwaggerBake\Swagger\index.php`
+- `/graphicleadtemplates\Swagger\index.php`
+- `C:\xampp\htdocs\graphiclead\templates\Swagger\index.php`
+- `C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\templates\Swagger\index.php`
+ in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\View.php on line 1359
+Exception Attributes: array (
+  'file' => 'Swagger\\index.php',
+  'paths' => 
+  array (
+    0 => 'C:\\xampp\\htdocs\\graphiclead\\templates\\plugin\\SwaggerBake\\',
+    1 => '/graphicleadtemplates\\',
+    2 => 'C:\\xampp\\htdocs\\graphiclead\\templates\\',
+    3 => 'C:\\xampp\\htdocs\\graphiclead\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\View.php:766
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:764
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Controller\SwaggerController.php:35
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /swagger?url=swagger
+
+
+2022-04-09 10:18:34 error: [Cake\View\Exception\MissingTemplateException] Template file `Swagger\index.php` could not be found.
+
+The following paths were searched:
+
+- `C:\xampp\htdocs\graphiclead\templates\plugin\SwaggerBake\Swagger\index.php`
+- `/graphicleadtemplates\Swagger\index.php`
+- `C:\xampp\htdocs\graphiclead\templates\Swagger\index.php`
+- `C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\templates\Swagger\index.php`
+ in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\View.php on line 1359
+Exception Attributes: array (
+  'file' => 'Swagger\\index.php',
+  'paths' => 
+  array (
+    0 => 'C:\\xampp\\htdocs\\graphiclead\\templates\\plugin\\SwaggerBake\\',
+    1 => '/graphicleadtemplates\\',
+    2 => 'C:\\xampp\\htdocs\\graphiclead\\templates\\',
+    3 => 'C:\\xampp\\htdocs\\graphiclead\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\View.php:766
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:764
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Controller\SwaggerController.php:35
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /swagger?url=swagger
+
+
+2022-04-09 10:19:17 error: [LogicException] Configuration does not exist for `yml` in Configuration::configs in C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Configuration.php on line 67
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Configuration.php:78
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Utility\ValidateConfiguration.php:31
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\SwaggerFactory.php:30
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Controller\Component\SwaggerUiComponent.php:53
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:636
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /swagger?url=swagger
+
+
+2022-04-09 10:24:10 warning: Warning (2): touch(): Unable to create file C:\xampp\htdocs\graphiclead/graphiclead/webroot/swagger.json because No such file or directory in [C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Utility\ValidateConfiguration.php, line 49]
+Request URL: /swagger?url=swagger
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+touch - [internal], line ??
+SwaggerBake\Lib\Utility\ValidateConfiguration::validate() - ROOT\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Utility\ValidateConfiguration.php, line 49
+SwaggerBake\Lib\SwaggerFactory::__construct() - ROOT\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\SwaggerFactory.php, line 30
+SwaggerBake\Controller\Component\SwaggerUiComponent::beforeFilter() - ROOT\vendor\cnizzardini\cakephp-swagger-bake\src\Controller\Component\SwaggerUiComponent.php, line 53
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 309
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::startupProcess() - CORE\src\Controller\Controller.php, line 636
+Cake\Controller\ControllerFactory::handle() - CORE\src\Controller\ControllerFactory.php, line 130
+Cake\Controller\ControllerFactory::invoke() - CORE\src\Controller\ControllerFactory.php, line 115
+Cake\Http\BaseApplication::handle() - CORE\src\Http\BaseApplication.php, line 317
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() - ROOT\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() - CORE\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 161
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 126
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 58
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 90
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-09 10:24:10 error: [SwaggerBake\Lib\Exception\SwaggerBakeRunTimeException] Unable to create swagger file. Try creating an empty file first or checking permissions in C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Utility\ValidateConfiguration.php on line 50
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\SwaggerFactory.php:30
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Controller\Component\SwaggerUiComponent.php:53
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:636
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /swagger?url=swagger
+
+
+2022-04-09 10:27:28 error: [SwaggerBake\Lib\Exception\SwaggerBakeRunTimeException] No restful routes were found for your prefix `/swagger`. Try adding restful routes to your `config/routes.php`. in C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\SwaggerFactory.php on line 45
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Controller\Component\SwaggerUiComponent.php:53
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:636
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /swagger?url=swagger
+
+
+2022-04-09 10:38:40 error: [Cake\Http\Exception\MissingControllerException] Controller class Swagger could not be found. in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Swagger',
+  'plugin' => 'SwaggerBake',
+  'prefix' => 'graphiclead',
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /swagger?url=swagger
+
+
+2022-04-13 16:11:07 error: [Cake\Http\Exception\MissingControllerException] Controller class Api could not be found. in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Api',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/api/imageqr
+Referer URL: http://localhost:8765/swagger
+
+
+2022-04-13 16:11:36 error: [Cake\Http\Exception\MissingControllerException] Controller class Api could not be found. in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Api',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/api/imageqr
+Referer URL: http://localhost:8765/swagger
+
+
+2022-04-13 16:12:26 error: [Cake\Http\Exception\MissingControllerException] Controller class Api could not be found. in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Api',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/api/imageqr
+Referer URL: http://localhost:8765/swagger
+
+
+2022-04-13 16:12:41 error: [Cake\Http\Exception\MissingControllerException] Controller class Api could not be found. in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Api',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/api/imageqr
+Referer URL: http://localhost:8765/swagger
+
+
+2022-04-13 16:14:40 error: [Cake\Http\Exception\MissingControllerException] Controller class Api could not be found. in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Api',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/api/imageqr
+Referer URL: http://localhost:8765/swagger
+
+
+2022-04-13 16:15:32 error: [LogicException] Configuration does not exist for `prefix` in Configuration::configs in C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Configuration.php on line 67
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Configuration.php:94
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Utility\ValidateConfiguration.php:41
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\SwaggerFactory.php:30
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Controller\Component\SwaggerUiComponent.php:53
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:636
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /swagger
+
+
+2022-04-13 16:16:29 error: [Cake\Http\Exception\MissingControllerException] Controller class Api could not be found. in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Api',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/api/imageqr
+Referer URL: http://localhost:8765/swagger
+
+
+2022-04-14 01:26:29 error: [Authentication\Authenticator\UnauthenticatedException] Authentication is required to continue in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 177
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:123
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:640
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/1
+
+
+2022-04-14 01:30:25 error: [Authentication\Authenticator\UnauthenticatedException] Authentication is required to continue in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 177
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:123
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:640
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/2
+
+
+2022-04-14 01:31:46 error: [Cake\Http\Exception\MissingControllerException] Controller class Api could not be found. in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Api',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/
+
+
+2022-04-14 01:42:50 error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ImagesQr.all' in 'field list' in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php:180
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php:75
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Connection.php:337
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Connection.php:340
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Query.php:250
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\ORM\Query.php:1148
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php:287
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\ORM\Query.php:1096
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php:494
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:43
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/2
+
+
+2022-04-14 01:43:36 error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS ImagesQr__* FROM imagesqr ImagesQr WHERE id = 2 LIMIT 1' at line 1 in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php:180
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php:75
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Connection.php:337
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Connection.php:340
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Database\Query.php:250
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\ORM\Query.php:1148
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php:287
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\ORM\Query.php:1096
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php:494
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:43
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/2
+
+
+2022-04-14 01:58:14 error: [App\Error\Exception\ApiException] Invalid image qr id in C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php on line 46
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/900
+
+
+2022-04-14 01:59:24 error: [App\Error\Exception\ApiException] Invalid image qr id in C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php on line 46
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/900
+
+
+2022-04-14 02:19:10 error: [Cake\Http\Exception\MissingControllerException] Controller class Webroot could not be found. in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /webroot/qrdata/2f6bea501290eddff89072a4e66f39-f065edde8c07019139842d-78a1bd36136f0f79.jpeg
+
+
+2022-04-14 02:38:41 error: [Cake\Http\Exception\MissingControllerException] Controller class Img could not be found. in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /img/
+
+
+2022-04-14 02:48:16 error: [Cake\Http\Exception\MissingControllerException] Controller class Img could not be found. in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /img/qrimage/
+
+
+2022-04-14 05:10:00 error: [Authentication\Authenticator\UnauthenticatedException] Authentication is required to continue in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 177
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:123
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:640
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e05f5f65e00c6d597b3b324c24c71522-a9b87e7988fda36d866d60-fcc1fe0a4cd8-51058c
+
+
+2022-04-14 05:20:35 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr
+
+
+2022-04-14 05:38:00 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:08:43 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:23:07 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:23:28 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:23:35 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:24:59 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:25:07 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:25:52 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:33:51 error: [ArgumentCountError] Too few arguments to function App\Application::App\{closure}(), 1 passed in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 166 and exactly 2 expected in C:\xampp\htdocs\graphiclead\src\Application.php on line 125
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:166
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:35:24 error: [ArgumentCountError] Too few arguments to function App\Application::App\{closure}(), 1 passed in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 166 and exactly 2 expected in C:\xampp\htdocs\graphiclead\src\Application.php on line 125
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:166
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:38:02 error: [ArgumentCountError] Too few arguments to function App\Application::App\{closure}(), 1 passed in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 166 and exactly 2 expected in C:\xampp\htdocs\graphiclead\src\Application.php on line 125
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:166
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:43:53 error: [ArgumentCountError] Too few arguments to function App\Application::App\{closure}(), 1 passed in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 166 and exactly 2 expected in C:\xampp\htdocs\graphiclead\src\Application.php on line 125
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:166
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:44:22 error: [ArgumentCountError] Too few arguments to function App\Application::App\{closure}(), 1 passed in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 166 and exactly 2 expected in C:\xampp\htdocs\graphiclead\src\Application.php on line 125
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:166
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:50:36 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:51:52 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:53:26 error: [ArgumentCountError] Too few arguments to function Cake\Http\ServerRequest::getUploadedFile(), 0 passed in C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php on line 113 and exactly 1 expected in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ServerRequest.php on line 1690
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:113
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:54:22 error: [ArgumentCountError] Too few arguments to function Cake\Http\ServerRequest::getUploadedFile(), 0 passed in C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php on line 113 and exactly 1 expected in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ServerRequest.php on line 1690
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:113
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 06:59:51 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 07:09:50 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 07:15:20 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 07:15:28 error: [BadMethodCallException] Method "getStream()" does not exist in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ServerRequest.php on line 468
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:113
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 07:20:09 error: [BadMethodCallException] Method "getStream()" does not exist in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ServerRequest.php on line 468
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:113
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 07:20:47 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 07:23:17 error: [Cake\Http\Exception\BadRequestException] Bad Request in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php on line 168
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 07:34:36 error: [Authentication\Authenticator\UnauthenticatedException] Authentication is required to continue in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 177
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:123
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:640
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 07:35:49 warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php line=116 in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 07:35:49 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 07:35:49 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 07:35:49 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 07:39:43 warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php line=116 in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 07:39:43 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 07:39:43 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 07:39:43 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 10:49:29 error: [Authentication\Authenticator\UnauthenticatedException] Authentication is required to continue in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 177
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:123
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:640
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 10:52:53 warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php line=116 in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 10:52:53 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 10:52:53 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 10:52:53 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 10:55:23 warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php line=116 in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 10:55:23 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 10:55:23 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 10:55:23 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:03:51 error: [Cake\View\Exception\MissingTemplateException] Template file `Api\ImagesQr\update_image_qr_by_id.php` could not be found.
+
+The following paths were searched:
+
+- `C:\xampp\htdocs\graphiclead\templates\Api\ImagesQr\update_image_qr_by_id.php`
+- `C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\templates\Api\ImagesQr\update_image_qr_by_id.php`
+ in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\View.php on line 1359
+Exception Attributes: array (
+  'file' => 'Api\\ImagesQr\\update_image_qr_by_id.php',
+  'paths' => 
+  array (
+    0 => 'C:\\xampp\\htdocs\\graphiclead\\templates\\',
+    1 => 'C:\\xampp\\htdocs\\graphiclead\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\View.php:766
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:764
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:548
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 11:03:51 warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php line=116 in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:03:51 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:03:51 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:03:51 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:04:32 error: [Cake\View\Exception\MissingTemplateException] Template file `Api\ImagesQr\update_image_qr_by_id.php` could not be found.
+
+The following paths were searched:
+
+- `C:\xampp\htdocs\graphiclead\templates\Api\ImagesQr\update_image_qr_by_id.php`
+- `C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\templates\Api\ImagesQr\update_image_qr_by_id.php`
+ in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\View.php on line 1359
+Exception Attributes: array (
+  'file' => 'Api\\ImagesQr\\update_image_qr_by_id.php',
+  'paths' => 
+  array (
+    0 => 'C:\\xampp\\htdocs\\graphiclead\\templates\\',
+    1 => 'C:\\xampp\\htdocs\\graphiclead\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\View.php:766
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:764
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:548
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 11:04:59 error: [Cake\View\Exception\MissingTemplateException] Template file `Api\ImagesQr\update_image_qr_by_id.php` could not be found.
+
+The following paths were searched:
+
+- `C:\xampp\htdocs\graphiclead\templates\Api\ImagesQr\update_image_qr_by_id.php`
+- `C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\templates\Api\ImagesQr\update_image_qr_by_id.php`
+ in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\View.php on line 1359
+Exception Attributes: array (
+  'file' => 'Api\\ImagesQr\\update_image_qr_by_id.php',
+  'paths' => 
+  array (
+    0 => 'C:\\xampp\\htdocs\\graphiclead\\templates\\',
+    1 => 'C:\\xampp\\htdocs\\graphiclead\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\View.php:766
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:764
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:548
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 11:07:17 error: [Cake\View\Exception\MissingTemplateException] Template file `Api\ImagesQr\json\update_image_qr_by_id.php` could not be found.
+
+The following paths were searched:
+
+- `C:\xampp\htdocs\graphiclead\templates\Api\ImagesQr\json\update_image_qr_by_id.php`
+- `C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\templates\Api\ImagesQr\json\update_image_qr_by_id.php`
+ in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\View.php on line 1359
+Exception Attributes: array (
+  'file' => 'Api\\ImagesQr\\json\\update_image_qr_by_id.php',
+  'paths' => 
+  array (
+    0 => 'C:\\xampp\\htdocs\\graphiclead\\templates\\',
+    1 => 'C:\\xampp\\htdocs\\graphiclead\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\View.php:766
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\SerializedView.php:120
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\JsonView.php:114
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:764
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:548
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 11:17:24 warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php line=116 in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:17:24 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:17:24 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:17:24 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:17:42 warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php line=116 in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:17:42 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:17:42 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:17:42 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:19:12 warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php line=116 in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:19:12 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:19:12 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:19:12 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:20:42 warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php line=116 in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:20:42 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:20:42 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:20:42 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:20:59 warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php line=116 in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:20:59 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:20:59 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:20:59 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:116) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:45:48 warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php line=115 in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:45:48 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:115) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:45:48 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:115) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:45:48 warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:115) in [C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 123
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 128
+[main] - ROOT\webroot\index.php, line 40
+
+2022-04-14 11:52:30 error: [ValueError] file_get_contents(): Argument #1 ($filename) must not contain any null bytes in C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php on line 114
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:114
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 11:57:52 error: [TypeError] finfo_file(): Argument #1 ($finfo) must not contain any null bytes in C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php on line 115
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 12:11:30 error: [ValueError] file_get_contents(): Argument #1 ($filename) must not contain any null bytes in C:\xampp\htdocs\graphiclead\src\Utility\Utility.php on line 53
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\src\Utility\Utility.php:53
+- C:\xampp\htdocs\graphiclead\src\Utility\Utility.php:59
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:114
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/e53f7c262e6db6ccc6c47c9e1bedbc-091fcf9b96fbab77fd96241c-f9a83841db5294-f7
+
+
+2022-04-14 12:44:45 error: [Error] Call to undefined method Cake\ORM\Entity::save() in C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php on line 127
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imageqr/2124243b469d411a7adf1e9f849f672a-333a3461fac7a8e17bb9c47bfc-61b06c9e6ef082-409b
+
+
+2022-04-14 12:51:33 error: [TypeError] Illegal offset type in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php on line 96
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:67
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imagequeue
+
+
+2022-04-14 12:52:12 error: [TypeError] Illegal offset type in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php on line 96
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:67
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:539
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:140
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imagequeue
+
+
+2022-04-14 13:02:42 error: [Cake\Http\Exception\MissingControllerException] Controller class Api could not be found. in C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Api',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:315
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:172
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/users/register
+
+
+2022-04-14 13:10:00 error: [Exception] The request object does not contain the required `authentication` attribute in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 142
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:228
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ApiController.php:31
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:30
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:221
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Model\ModelScanner.php:76
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\OpenApiSchemaGenerator.php:31
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Swagger.php:54
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\SwaggerFactory.php:51
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Controller\Component\SwaggerUiComponent.php:53
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:636
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /swagger
+
+
+2022-04-14 13:19:05 error: [Exception] The request object does not contain the required `authentication` attribute in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 142
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:228
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ApiController.php:31
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:30
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:221
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Model\ModelScanner.php:76
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\OpenApiSchemaGenerator.php:31
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Swagger.php:54
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\SwaggerFactory.php:51
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Controller\Component\SwaggerUiComponent.php:53
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:636
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /swagger
+
+
+2022-04-14 13:21:32 error: [Exception] The request object does not contain the required `authentication` attribute in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 142
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:228
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ApiController.php:32
+- C:\xampp\htdocs\graphiclead\src\Controller\Api\ImagesQrController.php:30
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:221
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Model\ModelScanner.php:76
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\OpenApiSchemaGenerator.php:31
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\Swagger.php:54
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Lib\SwaggerFactory.php:51
+- C:\xampp\htdocs\graphiclead\vendor\cnizzardini\cakephp-swagger-bake\src\Controller\Component\SwaggerUiComponent.php:53
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:636
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /swagger
+
+
+2022-04-14 13:25:30 error: [Authentication\Authenticator\UnauthenticatedException] Authentication is required to continue in C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 177
+Stack Trace:
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:123
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:309
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventManager.php:286
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php:92
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\Controller.php:640
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:130
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:115
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\BaseApplication.php:317
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:124
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\graphiclead\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\graphiclead\webroot\index.php:40
+
+Request URL: /api/imagequeue
+Referer URL: http://localhost:8765/swagger
+
+
