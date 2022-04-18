@@ -8,6 +8,10 @@ use App\Error\Exception\ValidationErrorException;
 use App\Error\Exception\ApiException;
 use Cake\Routing\Router;
 use Exception;
+use SwaggerBake\Lib\Attribute\OpenApiHeader;
+use SwaggerBake\Lib\Attribute\OpenApiSecurity;
+use SwaggerBake\Lib\Attribute\OpenApiRequestBody;
+use SwaggerBake\Lib\Attribute\OpenApiResponse;
 
 /**
  * ImagesQueue Controller
@@ -31,8 +35,10 @@ class ImagesQrController extends ApiController {
         //$this->viewBuilder()->setClassName('Json');
     }
     public function beforeFilter(\Cake\Event\EventInterface $event){
-        //parent::beforeFilter($event);
+        parent::beforeFilter($event);
     }
+    #[OpenApiSecurity(name: 'BearerAuth', scopes: ['read'])]
+    #[OpenApiHeader(name: "BearerAuth", description: "Put your Authorization token", isRequired: true)]
     public function getImageQrById() {
         $responseData = [];
         try {
@@ -60,6 +66,9 @@ class ImagesQrController extends ApiController {
          $this->set($responseData);
         
     }
+    #[OpenApiSecurity(name: 'BearerAuth', scopes: ['read'])]
+    #[OpenApiHeader(name: "BearerAuth", description: "Put your Authorization token", isRequired: true)]
+    
     public function getAllImageQueue() {
         $imageQrData = $this->ImagesQr->find('all')
                             ->where(['user_id' => $this->_userData->id]);
@@ -68,6 +77,9 @@ class ImagesQrController extends ApiController {
         $this->set($imageQrDataArray);
 
     }
+    #[OpenApiSecurity(name: 'BearerAuth', scopes: ['read'])]
+    #[OpenApiRequestBody(ref: "#/components/schemas/PostImageQr")]
+    #[OpenApiHeader(name: "BearerAuth", description: "Put your Authorization token", isRequired: true)]
     public function postImageQr() {
         try {
             $imageQrEntityData = [];
@@ -113,6 +125,8 @@ class ImagesQrController extends ApiController {
         } 
         
     }
+    #[OpenApiSecurity(name: 'BearerAuth', scopes: ['read'])]
+    #[OpenApiHeader(name: "BearerAuth", description: "Put your Authorization token", isRequired: true)]
     public function updateImageQrById() {
         try {
             $imageQruuId = $this->request->getParam('uuid');

@@ -9,6 +9,8 @@ use App\Error\Exception\ValidationErrorException;
 use Firebase\JWT\JWT;
 use Cake\Utility\Security;
 use SwaggerBake\Lib\Annotation as Swag;
+use SwaggerBake\Lib\Attribute\OpenApiRequestBody;
+use SwaggerBake\Lib\Attribute\OpenApiResponse;
 use stdClass;
 
 /**
@@ -39,6 +41,7 @@ class UsersController extends ApiController {
      * @property email
      * @return \Cake\Http\Response|null|void Redirects on successful add, renders view otherwise.
      */
+    #[OpenApiRequestBody(ref: "#/components/schemas/Login")]
     public function login() {
         $this->request->allowMethod(['post']);
         $result = $this->Authentication->getResult();
@@ -63,7 +66,7 @@ class UsersController extends ApiController {
             $this->response = $this->response->withStatus(422);
             $response = [
                 'details' => [
-                    'message' => 'something went wrong,during token creation' 
+                    'message' => 'Invalid user credential' 
                 ],
                 'status' => 422
             ];
@@ -71,6 +74,7 @@ class UsersController extends ApiController {
         $this->set($response);
     }
 
+    #[OpenApiRequestBody(ref: "#/components/schemas/Registration")]
     public function register() {
         $this->request->allowMethod(['post']);
         $userEntity = $this->Users->newEntity($this->request->getData());

@@ -146,7 +146,7 @@ class Application extends BaseApplication implements AuthenticationServiceProvid
     public function getAuthenticationService(ServerRequestInterface $request): AuthenticationServiceInterface {
         $service = new AuthenticationService();
         $fieldsForIdentify = [
-            IdentifierInterface::CREDENTIAL_USERNAME => 'email',
+            IdentifierInterface::CREDENTIAL_USERNAME => 'user_name',
             IdentifierInterface::CREDENTIAL_PASSWORD => 'password'
         ];
         $service->loadIdentifier('Authentication.JwtSubject');
@@ -155,7 +155,7 @@ class Application extends BaseApplication implements AuthenticationServiceProvid
             'algorithm' => 'RS256',
             'returnPayload' => false,
             'tokenPrefix' => 'Bearer',
-            'header' => 'Authorization'
+            'header' => 'BearerAuth'
         ]);
         $service->loadIdentifier('Authentication.Password', [
             'returnPayload' => false,
@@ -172,7 +172,7 @@ class Application extends BaseApplication implements AuthenticationServiceProvid
         // // Configure form data check to pick email and password
         $service->loadAuthenticator('Authentication.Form', [
             'fields' => [
-                'username' => 'email',
+                'username' => 'user_name',
                 'password' => 'password',
             ],
             'loginUrl' => Router::url('/api/login'),

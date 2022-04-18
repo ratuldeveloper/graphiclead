@@ -1,0 +1,23 @@
+openapi: '3.0.0'
+info:
+  version: 1.0.0
+  title: Foo
+  description: Why you talking bout ref
+servers:
+  - url: http://petstore.swagger.io/v1
+paths:
+  /pets:
+    get:
+      summary: List all pets
+      operationId: listPets
+      parameters:
+        - name: limit
+          in: query
+          description: 
+          required: false
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: A paged array of pets

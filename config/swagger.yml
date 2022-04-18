@@ -37,6 +37,97 @@ components:
           type: boolean
       xml:
         name: response
+    Login:
+      type : object
+      properties:
+        user_name:
+          type: string
+        password:
+          type: string
+    Registration:
+      type : object
+      properties:
+        user_name:
+          type: string
+          required: true
+        email: 
+          type: string
+          required: true
+        first_name:
+          type: string
+        last_name:
+          type: string
+        password:
+          type: string
+        company:
+          type: string
+    PostImageQr:
+      type: object
+      properties:
+        data: 
+          type: string
+          example : encoded data
+        image:
+          required : false
+          type: string
+          $ref: "#/components/schemas/Image"
+        attributes:
+          type: string
+          required : false
+          $ref: "#/components/schemas/Attributes"
+        output:
+          type: string
+          required: false
+          $ref: "#components/schemas/Output"
+    Image:
+     type: object
+     properties:
+      url:
+        type: string
+      method:
+        type: string
+    Attributes:
+      type: object
+      properties:
+        error_correction:
+          type: string
+          example : H
+        quiet_zone:
+          type: number
+          example: 3
+        version:
+          type: number
+          example: 2
+        rotate:
+          type: number
+          example: 90
+        eye_shape:
+          type: string
+          example: rounded
+    Output:
+      type: object
+      properties:
+        format:
+          type: string
+          example: png
+        callback:
+          type: string
+          example: "http://calbackurl.com"
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+          
+
+
+            
+
+
+
+        
+
 x-swagger-bake:
   components:
     schemas:

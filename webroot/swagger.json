@@ -23,7 +23,31 @@
                 "tags": [
                     "Images Qr"
                 ],
-                "parameters": [],
+                "requestBody": {
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "allOf": [
+                                    {
+                                        "$ref": "#\/components\/schemas\/PostImageQr"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "BearerAuth",
+                        "description": "Put your Authorization token",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "",
@@ -35,7 +59,14 @@
                             }
                         }
                     }
-                }
+                },
+                "security": [
+                    {
+                        "BearerAuth": [
+                            "read"
+                        ]
+                    }
+                ]
             }
         },
         "\/api\/imageqr\/{uuid}": {
@@ -55,32 +86,11 @@
                         "schema": {
                             "type": "string"
                         }
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application\/json": {
-                                "schema": {
-                                    "description": ""
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "put": {
-                "operationId": "api:imagesqr:updateimageqrbyid:put",
-                "summary": "",
-                "description": "",
-                "tags": [
-                    "Images Qr"
-                ],
-                "parameters": [
+                    },
                     {
-                        "in": "path",
-                        "name": "uuid",
+                        "in": "header",
+                        "name": "BearerAuth",
+                        "description": "Put your Authorization token",
                         "required": true,
                         "schema": {
                             "type": "string"
@@ -98,7 +108,60 @@
                             }
                         }
                     }
-                }
+                },
+                "security": [
+                    {
+                        "BearerAuth": [
+                            "read"
+                        ]
+                    }
+                ]
+            },
+            "put": {
+                "operationId": "api:imagesqr:updateimageqrbyid:put",
+                "summary": "",
+                "description": "",
+                "tags": [
+                    "Images Qr"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "uuid",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "in": "header",
+                        "name": "BearerAuth",
+                        "description": "Put your Authorization token",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "description": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "BearerAuth": [
+                            "read"
+                        ]
+                    }
+                ]
             }
         },
         "\/api\/imagequeue": {
@@ -110,7 +173,17 @@
                 "tags": [
                     "Images Qr"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "BearerAuth",
+                        "description": "Put your Authorization token",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "",
@@ -122,7 +195,14 @@
                             }
                         }
                     }
-                }
+                },
+                "security": [
+                    {
+                        "BearerAuth": [
+                            "read"
+                        ]
+                    }
+                ]
             }
         },
         "\/api\/login": {
@@ -134,6 +214,20 @@
                 "tags": [
                     "Users"
                 ],
+                "requestBody": {
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "allOf": [
+                                    {
+                                        "$ref": "#\/components\/schemas\/Login"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "required": true
+                },
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -146,7 +240,12 @@
                             }
                         }
                     }
-                }
+                },
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ]
             }
         },
         "\/api\/register": {
@@ -158,6 +257,24 @@
                 "tags": [
                     "Users"
                 ],
+                "requestBody": {
+                    "content": {
+                        "application\/json": {
+                            "schema": {
+                                "required": [
+                                    "user_name",
+                                    "email"
+                                ],
+                                "allOf": [
+                                    {
+                                        "$ref": "#\/components\/schemas\/Registration"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "required": true
+                },
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -170,13 +287,44 @@
                             }
                         }
                     }
-                }
+                },
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ]
             }
         }
     },
     "definitions": null,
     "components": {
         "schemas": {
+            "Attributes": {
+                "properties": {
+                    "error_correction": {
+                        "example": "H",
+                        "type": "string"
+                    },
+                    "quiet_zone": {
+                        "example": 3,
+                        "type": "number"
+                    },
+                    "version": {
+                        "example": 2,
+                        "type": "number"
+                    },
+                    "rotate": {
+                        "example": 90,
+                        "type": "number"
+                    },
+                    "eye_shape": {
+                        "example": "rounded",
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "description": ""
+            },
             "Entity": {
                 "properties": {
                     "id": {
@@ -245,6 +393,34 @@
                 "type": "object",
                 "description": ""
             },
+            "Image": {
+                "properties": {
+                    "url": {
+                        "example": "",
+                        "type": "string"
+                    },
+                    "method": {
+                        "example": "",
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "description": ""
+            },
+            "Login": {
+                "properties": {
+                    "user_name": {
+                        "example": "",
+                        "type": "string"
+                    },
+                    "password": {
+                        "example": "",
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "description": ""
+            },
             "OperationResult": {
                 "properties": {
                     "result": {
@@ -254,6 +430,79 @@
                 },
                 "xml": {
                     "name": "response"
+                },
+                "type": "object",
+                "description": ""
+            },
+            "Output": {
+                "properties": {
+                    "format": {
+                        "example": "png",
+                        "type": "string"
+                    },
+                    "callback": {
+                        "example": "http:\/\/calbackurl.com",
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "description": ""
+            },
+            "PostImageQr": {
+                "properties": {
+                    "data": {
+                        "example": "encoded data",
+                        "type": "string"
+                    },
+                    "image": {
+                        "example": "",
+                        "type": "string",
+                        "$ref": "#\/components\/schemas\/Image"
+                    },
+                    "attributes": {
+                        "example": "",
+                        "type": "string",
+                        "$ref": "#\/components\/schemas\/Attributes"
+                    },
+                    "output": {
+                        "example": "",
+                        "type": "string",
+                        "$ref": "#components\/schemas\/Output"
+                    }
+                },
+                "type": "object",
+                "description": ""
+            },
+            "Registration": {
+                "required": [
+                    "user_name",
+                    "email"
+                ],
+                "properties": {
+                    "user_name": {
+                        "example": "",
+                        "type": "string"
+                    },
+                    "email": {
+                        "example": "",
+                        "type": "string"
+                    },
+                    "first_name": {
+                        "example": "",
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "example": "",
+                        "type": "string"
+                    },
+                    "password": {
+                        "example": "",
+                        "type": "string"
+                    },
+                    "company": {
+                        "example": "",
+                        "type": "string"
+                    }
                 },
                 "type": "object",
                 "description": ""
@@ -325,6 +574,13 @@
                 },
                 "type": "object",
                 "description": ""
+            }
+        },
+        "securitySchemes": {
+            "BearerAuth": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
             }
         }
     },
